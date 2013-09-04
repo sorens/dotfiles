@@ -2,7 +2,7 @@
 
 ## dotfiles
 
-Originally forked from [holman's excellent dotfiles](https://github.com/holman/dotfiles).
+Forked from [holman's excellent dotfiles](https://github.com/holman/dotfiles).
 (Cheers, @holman!)
 
 ## install
