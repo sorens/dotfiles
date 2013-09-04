@@ -24,6 +24,8 @@ alias gf='git fetch'
 alias gfp='git format-patch'
 alias gse='git send-email'
 
+alias gsr='git svn rebase'
+
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias grm="git status | grep deleted | awk '{\$1=\$2=\"\"; print \$0}' | \
            perl -pe 's/^[ \t]*//' | sed 's/ /\\\\ /g' | xargs git rm"

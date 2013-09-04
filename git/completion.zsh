@@ -26,6 +26,8 @@ compdef _git gf=git-fetch
 compdef _git gfp=git-format-patch
 compdef _git gse=git-send-email
 
+compdef _git gsr=git-svn-rebase
+
 zstyle ':completion:*' users ''
 __git_files () {
     _wanted files expl 'local files' _files
