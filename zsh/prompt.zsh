@@ -69,10 +69,14 @@ rb_prompt() {
 }
 
 directory_name() {
-  echo "%{$fg_bold[cyan]%}%1/%\/%{$reset_color%}"
+  echo "%{$fg_bold[cyan]%}%~%{$reset_color%}"
 }
 
-export PROMPT=$'$(rb_prompt)in $(directory_name)\n› '
+user_and_host() {
+  echo "%n@%m:"
+}
+
+export PROMPT=$'$(rb_prompt)in $(user_and_host)$(directory_name)\n› '
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
 }
