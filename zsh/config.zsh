@@ -7,6 +7,10 @@ fi
 export LSCOLORS="exfxcxdxbxegedabagacad"
 export CLICOLOR=true
 
+# pager
+export PAGER="less -R"
+export LC_CTYPE=$LANG
+
 fpath=($ZSH/functions $fpath)
 
 autoload -U $ZSH/functions/*(:t)
@@ -14,6 +18,13 @@ autoload -U $ZSH/functions/*(:t)
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
+
+# Make ctrl-w delete until a word separator (and not just until it finds a space),
+# among other things.
+WORDCHARS=''
+# Does it make sense to do the following instead? Is this any different?:
+# autoload -U select-word-style
+# select-word-style bash
 
 setopt NO_BG_NICE # don't nice background tasks
 setopt NO_HUP
@@ -32,6 +43,10 @@ setopt APPEND_HISTORY # adds history
 setopt INC_APPEND_HISTORY SHARE_HISTORY  # adds history incrementally and share it across sessions
 setopt HIST_IGNORE_ALL_DUPS  # don't record dupes in history
 setopt HIST_REDUCE_BLANKS
+
+unsetopt MENU_COMPLETE # do not autoselect the first completion entry
+setopt AUTO_MENU         # show completion menu on succesive tab press
+setopt ALWAYS_TO_END
 
 # don't expand aliases _before_ completion has finished
 #   like: git comm-[tab]
