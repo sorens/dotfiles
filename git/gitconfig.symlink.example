@@ -1,38 +1,63 @@
-# Sample gitconfig
-#
-
-[hub]
-        protocol = https
 [user]
-        name = AUTHORNAME
-        email = AUTHOREMAIL
+  name = AUTHORNAME
+  email = AUTHOREMAIL
+[hub]
+  protocol = https
 [credential]
-        helper = GIT_CREDENTIAL_HELPER
-[alias]
-        co = checkout
-        promote = !$ZSH/bin/git-promote
-        wtf     = !$ZSH/bin/git-wtf
-        rank-contributers = !$ZSH/bin/git-rank-contributers
-        count   = !git shortlog -sn
-[color]
-        diff = auto
-        status = auto
-        branch = auto
-        ui = true
-[core]
-        excludesfile = ~/.gitignore
-        editor = vim
-[apply]
-        whitespace = nowarn
-[mergetool]
-        keepBackup = false
+  helper = GIT_CREDENTIAL_HELPER
 [difftool]
-        prompt = false
-[help]
-        autocorrect = 1
+  prompt = false
+[mergetool]
+  keepBackup = false
+[diff]
+  tool = Kaleidoscope
+  renames = copies
+  mnemonicprefix = true
+[apply]
+  whitespace = nowarn
+[alias]
+  co = checkout
+  promote = !$ZSH/bin/git-promote
+  wtf     = !$ZSH/bin/git-wtf
+  rank-contributers = !$ZSH/bin/git-rank-contributers
+  count   = !git shortlog -sn
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = auto
+[core]
+  excludesfile = ~/.gitignore
+  editor = vim
+  whitespace = cr-at-eol
+[branch]
+  autosetupmerge = true
+  autosetuprebase = always
 [push]
-        # See `git help config` (search for push.default)
-        # for more information on different options of the below setting.
-        #
-        # Setting to git 2.0 default to surpress warning message
-        default = simple
+  # See `git help config` (search for push.default)
+  # for more information on different options of the below setting.
+  #
+  # Setting to git 2.0 default to surpress warning message
+  default = simple
+[merge]
+  tool = Kaleidoscope
+  stat = true
+[difftool "Kaleidoscope"]
+  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[advice]
+  statusHints = false
+[rerere]
+  enabled = true
+[difftool]
+  prompt = false
+
+[sendemail]
+  confirm = auto
+  chainreplyto = false
+  supresscc = all
+  thread = false
+[mergetool "Kaleidoscope"]
+  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+  trustExitCode = true
+[mergetool]
+  prompt = false
