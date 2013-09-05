@@ -76,9 +76,11 @@ user_and_host() {
   echo "%n@%m:"
 }
 
-export PROMPT=$'$(rb_prompt)in $(user_and_host)$(directory_name)\n› '
+export PROMPT=$'$(user_and_host)$(directory_name)\n%# '
 set_prompt () {
-  export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
+  # This is kind of neat, but not super necessary. Maybe I'll reconsider this
+  # when I'm doing a lot of Ruby development again.
+  # export RPROMPT="%{$fg_bold[cyan]%}$(rb_prompt)%{$reset_color%}"
 }
 
 precmd() {
