@@ -9,7 +9,7 @@ function title() {
 
   case $TERM in
   screen)
-    print -Pn "\ek$a:$3\e\\" # screen title (in ^A")
+    print -Pn "\ek$a:$2\e\\" # screen title (in ^A")
     ;;
   xterm*|rxvt)
     print -Pn "\e]2;$3\a" # $3 shows the current working directory

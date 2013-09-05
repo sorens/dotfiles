@@ -73,10 +73,10 @@ directory_name() {
 }
 
 user_and_host() {
-  echo "%n@%m:"
+  echo "%n%{$fg_no_bold[cyan]%}@%{$fg_no_bold[yellow]%}%m%{$reset_color%}:"
 }
 
-export PROMPT=$'$(user_and_host)$(directory_name)\n%# '
+export PROMPT=$'$(directory_name) %# '
 set_prompt () {
   # This is kind of neat, but not super necessary. Maybe I'll reconsider this
   # when I'm doing a lot of Ruby development again.
@@ -84,6 +84,6 @@ set_prompt () {
 }
 
 precmd() {
-  title "zsh" "%m" "%55<...<%~"
+  title "zsh" "%n@%m" "%55<...<%~"
   set_prompt
 }
