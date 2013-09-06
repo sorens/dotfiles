@@ -35,6 +35,7 @@ defaults write -g com.apple.mouse.tapBehavior -int 1
 # Use scroll gesture with the Ctrl (^) modifier key to zoom.
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
+defaults write com.apple.universalaccess closeViewSmoothImages -bool false
 
 # Turn on four- and five-finger trackpad gestures.
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFiveFingerPinchGesture -int 2
