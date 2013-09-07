@@ -25,8 +25,11 @@ function installcask() {
 }
 
 installcask alfred
+installcask daisy-disk
 installcask dropbox
+installcask google-chrome
 installcask macvim
+installcask one-password
 installcask postgres
 # installcask slicy <-- installed via mac app store :(
 installcask spotify
