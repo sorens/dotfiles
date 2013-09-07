@@ -16,4 +16,35 @@ fi
 # Install homebrew packages
 brew install grc coreutils spark ack hub wget tree
 
+# Install `brew cask` command for installing native apps.
+brew tap phinze/homebrew-cask
+brew install brew-cask
+
+function installcask() {
+  brew cask install "${@}" 2> /dev/null
+}
+
+installcask alfred
+installcask dropbox
+installcask macvim
+installcask postgres
+# installcask slicy <-- installed via mac app store :(
+installcask spotify
+installcask the-unarchiver
+installcask things
+installcask transmission
+installcask transmit
+installcask true-crypt
+installcask virtualbox
+installcask vagrant
+installcask vlc
+# installcask xscope <-- installed via mac app store :(
+
+installcask gpgtools
+sudo launchctl unload -w /Library/LaunchAgents/org.gpgtools.macgpg2.gpg-agent.plist
+
+open ~/Applications/Alfred\ 2.app
+sleep 1 # lol
+brew cask alfred link
+
 exit 0
