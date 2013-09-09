@@ -14,7 +14,7 @@ then
 fi
 
 # Install homebrew packages
-brew install grc coreutils spark ack hub wget tree
+brew install spark ack hub wget tree
 
 # Install `brew cask` command for installing native apps.
 brew tap phinze/homebrew-cask
