@@ -1,8 +1,6 @@
 [user]
   name = AUTHORNAME
   email = AUTHOREMAIL
-[hub]
-  protocol = https
 [credential]
   helper = GIT_CREDENTIAL_HELPER
 [difftool]
