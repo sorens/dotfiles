@@ -2,3 +2,9 @@
 if [[ "$EDITOR" == "" ]] ; then
   export EDITOR='vim'
 fi
+
+# FFFFFUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU
+# Setting $EDITOR to 'vim' changes zsh's keybindings! WHAT THE HELL.
+# `bindkey -e` sets us back to the standard keybindings mode (which is more
+# like emacs).
+bindkey -e
