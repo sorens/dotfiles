@@ -43,8 +43,8 @@ installcask vagrant
 installcask vlc
 # installcask xscope <-- installed via mac app store :(
 
-installcask gpgtools
-sudo launchctl unload -w /Library/LaunchAgents/org.gpgtools.macgpg2.gpg-agent.plist
+# installcask gpgtools
+# sudo launchctl unload -w /Library/LaunchAgents/org.gpgtools.macgpg2.gpg-agent.plist
 
 open ~/Applications/Alfred\ 2.app
 sleep 1 # lol
