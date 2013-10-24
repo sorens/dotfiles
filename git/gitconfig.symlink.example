@@ -48,12 +48,12 @@
   enabled = true
 [difftool]
   prompt = false
-
 [sendemail]
   confirm = auto
   chainreplyto = false
   supresscc = all
   thread = false
+  suppresscc = all
 [mergetool "Kaleidoscope"]
   cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
   trustExitCode = true
