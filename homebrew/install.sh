@@ -29,7 +29,7 @@ installcask daisy-disk
 installcask dropbox
 installcask google-chrome
 installcask macvim
-installcask one-password
+installcask onepassword
 installcask postgres
 # installcask slicy <-- installed via mac app store :(
 installcask spotify
