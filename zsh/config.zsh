@@ -37,7 +37,6 @@ setopt EXTENDED_HISTORY # add timestamps to history
 setopt PROMPT_SUBST
 setopt CORRECT
 setopt COMPLETE_IN_WORD
-setopt IGNORE_EOF
 setopt AUTO_CD # allow `cd`ing by just typing the directory name
 
 setopt APPEND_HISTORY # adds history
