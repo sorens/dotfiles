@@ -8,7 +8,6 @@
 [mergetool]
   keepBackup = false
 [diff]
-  tool = Kaleidoscope
   renames = copies
   mnemonicprefix = true
 [apply]
@@ -38,10 +37,7 @@
   # Setting to git 2.0 default to surpress warning message
   default = simple
 [merge]
-  tool = Kaleidoscope
   stat = true
-[difftool "Kaleidoscope"]
-  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [advice]
   statusHints = false
 [rerere]
@@ -53,8 +49,6 @@
   chainreplyto = false
   thread = false
   suppresscc = all
-[mergetool "Kaleidoscope"]
-  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
   trustExitCode = true
 [mergetool]
   prompt = false
