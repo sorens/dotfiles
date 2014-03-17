@@ -10,6 +10,12 @@
 [diff]
   renames = copies
   mnemonicprefix = true
+[diff "objcpp"]
+  xfuncname = ^[-+@a-zA-Z_].*$
+[diff "objcppheader"]
+  xfuncname = ^[@a-zA-Z_].*$
+[diff "localizablestrings"]
+  textconv = "iconv -f utf-16 -t utf-8"
 [apply]
   whitespace = nowarn
 [alias]
