@@ -1,9 +1,13 @@
-#!/bin/sh
+#!/bin/bash
 #
 # dot
 #
 # `dot` handles installation, updates, things like that. Run it periodically
 # to make sure you're on the latest and greatest.
+
+cd "$(dirname "${BASH_SOURCE[0]}")/.." 2>&1 > /dev/null
+ZSH=$(pwd)
+cd - 2>&1 > /dev/null
 
 # Set OS X defaults
 $ZSH/osx/set-defaults.sh
