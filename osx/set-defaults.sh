@@ -37,16 +37,6 @@ defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 defaults write com.apple.universalaccess closeViewSmoothImages -bool false
 
-# Turn on four- and five-finger trackpad gestures.
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFiveFingerPinchGesture -int 2
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFourFingerHorizSwipeGesture -int 2
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFourFingerPinchGesture -int 2
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFourFingerVertSwipeGesture -int 2
-
-# Turn on three-finger drag and tap gestures.
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerTapGesture -int 2
-
 # ****************************
 # Finder
 # ****************************
@@ -82,9 +72,6 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 # ****************************
 # Safari
 # ****************************
-
-# Hide Safari's bookmark bar.
-defaults write com.apple.Safari ShowFavoritesBar -bool false
 
 # Set up Safari for development.
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
@@ -131,15 +118,6 @@ defaults write com.apple.loginwindow TALLogoutSavesState -bool false
 
 # Set default icon size in the Dock.
 defaults write com.apple.dock tilesize -float 48
-
-# ****************************
-# Terminal
-# ****************************
-
-open "$ZSH/osx/IR_Black.terminal"
-sleep 1 # Wait a bit to make sure the theme is loaded
-defaults write com.apple.terminal "Default Window Settings" -string "IR_Black"
-defaults write com.apple.terminal "Startup Window Settings" -string "IR_Black"
 
 # ****************************
 # Cleanup, etc.
