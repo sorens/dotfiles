@@ -14,7 +14,7 @@ then
 fi
 
 # Install homebrew packages
-brew install spark ack hub wget tree gpg2 oath-toolkit node go
+brew install spark ack hub wget tree gpg gpg2 oath-toolkit node go
 
 # Install `brew cask` command for installing native apps.
 brew tap phinze/homebrew-cask
