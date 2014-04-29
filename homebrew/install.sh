@@ -14,33 +14,47 @@ then
 fi
 
 # Install homebrew packages
-brew install spark ack hub wget tree gpg gpg2 oath-toolkit node go
+brew install spark ack hub wget tree gpg gpg2 oath-toolkit node go mercurial linode-cli
+
+# Graphics stuff
+brew install assimp glm
 
 # Install `brew cask` command for installing native apps.
-brew tap phinze/homebrew-cask
-brew install brew-cask
+# brew tap phinze/homebrew-cask
+# brew install brew-cask
 
-function installcask() {
-  brew cask install "${@}" 2> /dev/null
-}
+# function installcask() {
+#   brew cask install "${@}" 2> /dev/null
+# }
+
+# FIXME: add download + install machinery for:
+# http://i.agilebits.com/dist/1P/mac4/1Password-4.3.zip
+# http://theunarchiver.googlecode.com/files/TheUnarchiver3.9.1.zip
+# https://github.com/PostgresApp/PostgresApp/releases/download/9.3.4.1/Postgres-9.3.4.1.zip
+# http://download.transmissionbt.com/files/Transmission-2.82.dmg
+# http://www.panic.com/transmit/d/Transmit%204.4.6.zip
+# http://culturedcode.com/things/download/
+# http://get.videolan.org/vlc/2.1.4/macosx/vlc-2.1.4.dmg
+# http://download.virtualbox.org/virtualbox/4.3.10/VirtualBox-4.3.10-93012-OSX.dmg
+# https://dl.bintray.com/mitchellh/vagrant/vagrant_1.5.4.dmg
 
 # installcask alfred
 # installcask daisy-disk
-installcask dropbox
+# installcask dropbox
 # installcask google-chrome
 # installcask macvim
-installcask onepassword
+# installcask onepassword
 # installcask postgres
 # installcask slicy <-- installed via mac app store :(
 # installcask spotify
-installcask the-unarchiver
-installcask things
-installcask transmission
-installcask transmit
-installcask true-crypt
-installcask virtualbox
-installcask vagrant
-installcask vlc
+# installcask the-unarchiver
+# installcask things
+# installcask transmission
+# installcask transmit
+# installcask true-crypt
+# installcask virtualbox
+# installcask vagrant
+# installcask vlc
 # installcask xscope <-- installed via mac app store :(
 
 # installcask gpgtools
