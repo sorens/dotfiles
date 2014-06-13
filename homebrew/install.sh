@@ -14,7 +14,7 @@ then
 fi
 
 # Install homebrew packages
-brew install spark ack hub wget tree gpg gpg2 oath-toolkit node go mercurial linode-cli
+brew install spark ack hub wget tree gpg gpg2 oath-toolkit node go mercurial linode-cli heroku-toolbelt
 
 # Graphics stuff
 brew install assimp glm
