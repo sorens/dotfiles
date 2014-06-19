@@ -14,10 +14,13 @@ then
 fi
 
 # Install homebrew packages
-brew install spark ack hub wget tree gpg gpg2 oath-toolkit node go mercurial linode-cli heroku-toolbelt
+brew install spark ack hub wget tree gpg gpg2 oath-toolkit node go mercurial heroku-toolbelt
 
 # Graphics stuff
 brew install assimp glm
+
+brew tap linode/cli
+brew install linode-cli
 
 # Install `brew cask` command for installing native apps.
 # brew tap phinze/homebrew-cask
