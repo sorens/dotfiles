@@ -2,6 +2,7 @@
 .svn
 *~
 *.swp
+Session.vim
 *.rbc
 **/*.xcodeproj/xcuserdata
 **/*.xcworkspace/xcuserdata
