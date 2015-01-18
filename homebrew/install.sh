@@ -14,10 +14,13 @@ then
 fi
 
 # Random utilities
-brew install spark wget tree gpg gpg2 oath-toolkit
+brew install spark wget tree gpg gpg2 oath-toolkit nmap hping
 
 # Dev tools
-brew install ack hub node go mercurial ansible
+brew install ack hub node go mercurial cvs cvsync ansible signify-osx docker boot2docker
+
+# Infrastructure
+brew install syncthing
 
 # IaaS/PaaS tools
 brew install heroku-toolbelt
