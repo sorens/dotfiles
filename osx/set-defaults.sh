@@ -53,18 +53,11 @@ defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 # Disable file extension change warning.
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
-# Set the Finder prefs for showing a few different volumes on the Desktop.
-defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
-defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
-
 # Set sidebar icon size to Small.
 defaults write -g NSTableViewDefaultSizeMode -int 1
 
 # Show all filename extensions.
 defaults write -g AppleShowAllExtensions -bool true
-
-# Show status bar.
-defaults write com.apple.finder ShowStatusBar -bool true
 
 # Avoid creating .DS_Store files on network volumes.
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
@@ -109,21 +102,8 @@ defaults write com.apple.DiskUtility advanced-image-options -bool true
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
-# Disable "Reopen windows when logging back in" feature.
-defaults write com.apple.loginwindow TALLogoutSavesState -bool false
-
-# ****************************
-# Dock
-# ****************************
-
-# Set default icon size in the Dock.
-defaults write com.apple.dock tilesize -float 48
-
 # ****************************
 # Cleanup, etc.
 # ****************************
-
-# Restart affected applications that won't cause disruption of work (i.e. we won't restart Safari).
-killall Dock
 
 echo "Done setting up OS X preferences! NOTE: Some of these changes require a logout or restart to take effect."
