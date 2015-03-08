@@ -22,7 +22,7 @@ brew install gpg gpg2 oath-toolkit signify-osx md5sha1sum
 brew install nmap hping
 
 # Languages/runtimes, build tools, dependency management
-brew install node go objective-caml opam cmake carthage
+brew install node go objective-caml opam cmake carthage rbenv ruby-build
 
 # Source control
 brew install hub cvs cvsync mercurial bazaar
