@@ -10,7 +10,7 @@ ZSH=$(pwd)
 cd - 2>&1 > /dev/null
 
 # Set OS X defaults
-$ZSH/osx/set-defaults.sh
+$ZSH/os-x/set-defaults.sh
 
 # Upgrade homebrew
 brew update
