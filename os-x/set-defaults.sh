@@ -17,6 +17,8 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 # Disable autocorrect.
 defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
 
+defaults write -g NSAutomaticDashSubstitutionEnabled -bool false
+
 # Set a really fast key repeat.
 defaults write -g KeyRepeat -int 0
 
@@ -66,18 +68,33 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 # Safari
 # ****************************
 
-# Set up Safari for development.
+# Show debug/development menus.
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
 defaults write -g WebKitDeveloperExtras -bool true
 
-# Prevent Safari from opening ‘safe’ files automatically after downloading.
-defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
-
-# Make Safari’s search banners default to Contains instead of Starts With.
+# STOP BEING ANNOYING
+defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true
+defaults write com.apple.Safari CanPromptForPushNotifications -bool false
 defaults write com.apple.Safari FindOnPageMatchesWordStartsOnly -bool false
+defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
+defaults write com.apple.Safari UniversalSearchFeatureNotificationHasBeenDisplayed -bool true
+defaults write com.apple.Safari UniversalSearchEnabled -bool false
+defaults write com.apple.Safari ShowFavoritesUnderSmartSearchField -bool false
+
+# Tab/window restoration!
+defaults write com.apple.Safari AlwaysRestoreSessionAtLaunch -bool true
+
+# Turn off parts of AutoFill (but leave username/password AutoFill on).
+defaults write com.apple.Safari AutoFillCreditCardData -bool false
+defaults write com.apple.Safari AutoFillFromAddressBook -bool false
+defaults write com.apple.Safari AutoFillMiscellaneousForms -bool false
+
+# New tabs/windows open to Empty Page.
+defaults write com.apple.Safari NewTabBehavior -int 1
+defaults write com.apple.Safari NewWindowBehavior -int 1
 
 # ****************************
 # Mail
@@ -85,6 +102,12 @@ defaults write com.apple.Safari FindOnPageMatchesWordStartsOnly -bool false
 
 # Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>`.
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
+
+defaults write com.apple.mail NumberOfSnippetLines -int 1
+defaults write com.apple.mail JunkMailBehavior -int 0
+defaults write com.apple.mail ConversationViewMarkAllAsRead -bool true
+
+defaults write com.apple.mail-shared DisableURLLoading -bool true
 
 # ****************************
 # Disk Utility
@@ -101,6 +124,12 @@ defaults write com.apple.DiskUtility advanced-image-options -bool true
 # Require a password immediately after the screensaver starts.
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+# ****************************
+# Sound
+# ****************************
+
+defaults write -g com.apple.sound.beep.feedback -bool true
 
 # ****************************
 # Cleanup, etc.
