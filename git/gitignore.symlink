@@ -6,4 +6,3 @@ Session.vim
 *.rbc
 **/*.xcodeproj/xcuserdata
 **/*.xcworkspace/xcuserdata
-[bB]uild/
