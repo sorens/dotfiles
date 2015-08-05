@@ -13,16 +13,16 @@ then
 fi
 
 # Core utilities
-brew install ack spark wget tree macvim
+brew install ack wget tree
 
 # Crypto/security
-brew install gpg gpg2 oath-toolkit signify-osx md5sha1sum
+brew install gpg gpg2 oath-toolkit signify-osx
 
 # Networking
 brew install nmap hping
 
 # Languages/runtimes, build tools, dependency management
-brew install node objective-caml opam cmake carthage rbenv ruby-build
+brew install node carthage rbenv ruby-build
 brew install go --with-cc-common
 
 # Source control
@@ -37,7 +37,7 @@ brew tap linode/cli
 brew install linode-cli
 
 # Games/graphics libs and tools
-brew install assimp glm sdl sdl2
+#brew install assimp glm sdl sdl2
 
 # FIXME: add download + install machinery for:
 # http://i.agilebits.com/dist/1P/mac4/1Password-4.3.zip
