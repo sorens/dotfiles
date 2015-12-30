@@ -19,7 +19,7 @@ brew install ack wget tree
 brew install gpg gpg2 oath-toolkit signify-osx
 
 # Networking
-brew install nmap hping
+brew install nmap hping httpie
 
 # Languages/runtimes, build tools, dependency management
 brew install node carthage rbenv ruby-build
