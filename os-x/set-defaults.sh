@@ -132,6 +132,13 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 defaults write -g com.apple.sound.beep.feedback -bool true
 
 # ****************************
+# Image Capture
+# ****************************
+
+# Disable incredibly annoying Image Capture/Photos.app popups when plugging in new iDevices.
+defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool YES
+
+# ****************************
 # Cleanup, etc.
 # ****************************
 
