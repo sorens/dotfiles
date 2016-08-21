@@ -16,14 +16,13 @@ fi
 brew install ack wget tree
 
 # Crypto/security
-brew install gpg gpg2 oath-toolkit signify-osx
+brew install gpg gpg2
 
 # Networking
 brew install nmap hping httpie
 
 # Languages/runtimes, build tools, dependency management
-brew install node carthage rbenv ruby-build
-brew install go --with-cc-common
+brew install go node rbenv ruby-build cloc
 
 # Source control
 brew install hub cvs cvsync mercurial bazaar
@@ -32,9 +31,7 @@ brew install hub cvs cvsync mercurial bazaar
 brew install syncthing
 
 # IaaS/PaaS, devops tools
-brew install heroku-toolbelt ansible docker boot2docker qemu
-brew tap linode/cli
-brew install linode-cli
+brew install heroku-toolbelt ansible
 
 # Games/graphics libs and tools
 #brew install assimp glm sdl sdl2
