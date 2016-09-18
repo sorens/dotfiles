@@ -1,0 +1,18 @@
+###################
+# General configuration
+###################
+
+set -g mouse on
+
+###################
+# General key bindings
+###################
+
+# Redraw the whole tmux window
+bind R refresh-client
+
+# Reload the tmux config file
+unbind r
+bind r \
+    source-file ~/.tmux.conf \;\
+    display 'Reloaded tmux config.'
