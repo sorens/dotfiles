@@ -16,7 +16,7 @@ fi
 brew install ack wget tree tmux
 
 # Crypto/security
-brew install gpg gpg2
+# brew install gpg gpg2
 
 # Networking
 brew install nmap hping httpie
