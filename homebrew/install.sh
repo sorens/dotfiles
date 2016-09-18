@@ -13,7 +13,7 @@ then
 fi
 
 # Core utilities
-brew install ack wget tree
+brew install ack wget tree tmux
 
 # Crypto/security
 brew install gpg gpg2
