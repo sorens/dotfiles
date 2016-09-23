@@ -4,6 +4,8 @@
 
 set -g mouse on
 
+set -g history-limit 80000
+
 ###################
 # General key bindings
 ###################
