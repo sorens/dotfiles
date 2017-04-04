@@ -9,6 +9,10 @@ set -g history-limit 80000
 # Disable auto-renaming of windows (╯°□°）╯_|______|_
 set -g allow-rename off
 
+# Appease neovim (╯°□°）╯_|______|_
+set -g default-terminal "screen-256color"
+set-option -sg escape-time 10
+
 ###################
 # General key bindings
 ###################
