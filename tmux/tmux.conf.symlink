@@ -6,6 +6,9 @@ set -g mouse on
 
 set -g history-limit 80000
 
+# Disable auto-renaming of windows (╯°□°）╯_|______|_
+set -g allow-rename off
+
 ###################
 # General key bindings
 ###################
