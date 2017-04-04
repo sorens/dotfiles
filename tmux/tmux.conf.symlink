@@ -25,3 +25,8 @@ unbind r
 bind r \
     source-file ~/.tmux.conf \;\
     display 'Reloaded tmux config.'
+
+# Take working directory into account when splitting and creating new windows
+bind '"' split-window -c "#{pane_current_path}"
+bind % split-window -h -c "#{pane_current_path}"
+bind c new-window -c "#{pane_current_path}"
