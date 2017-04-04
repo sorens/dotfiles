@@ -30,3 +30,6 @@ bind r \
 bind '"' split-window -c "#{pane_current_path}"
 bind % split-window -h -c "#{pane_current_path}"
 bind c new-window -c "#{pane_current_path}"
+
+# Copy to macOS pasteboard
+if -b 'command -v reattach-to-user-namespace > /dev/null 2>&1' 'bind y run "tmux save-buffer - | reattach-to-user-namespace pbcopy"'
