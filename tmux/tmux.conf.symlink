@@ -13,6 +13,10 @@ set -g allow-rename off
 set -g default-terminal "screen-256color"
 set-option -sg escape-time 10
 
+set -g status-right-length 120
+set -g status-right '#(zsh -c "cd #{pane_current_path}; print -P %%2~") %a %I:%M %p'
+set-option -g status-interval 1
+
 ###################
 # General key bindings
 ###################
