@@ -39,3 +39,6 @@ bind c new-window -c "#{pane_current_path}"
 if -b 'command -v reattach-to-user-namespace > /dev/null 2>&1' 'bind-key -t vi-copy y copy-pipe "reattach-to-user-namespace pbcopy"'
 
 bind-key e resize-pane -x 70
+
+bind-key -n S-Left swap-window -t -1
+bind-key -n S-Right swap-window -t +1
