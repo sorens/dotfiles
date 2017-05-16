@@ -15,8 +15,8 @@ fi
 # Core utilities
 brew install ack wget tree tmux
 
-# Crypto/security
-# brew install gpg gpg2
+# Editors
+brew install neovim/neovim/neovim
 
 # Networking
 brew install nmap hping httpie
@@ -31,9 +31,4 @@ brew install hub cvs cvsync mercurial bazaar
 brew install syncthing
 
 # IaaS/PaaS, devops tools
-brew install heroku-toolbelt ansible
-
-# Games/graphics libs and tools
-#brew install assimp glm sdl sdl2
-
-exit 0
+brew install awscli heroku ansible terraform packer
