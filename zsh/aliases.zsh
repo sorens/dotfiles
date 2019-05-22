@@ -1,4 +1,8 @@
-alias ls="ls -F"
+if [[ "$(uname -s)" == "Linux" ]] ; then
+    alias ls="ls -F --color"
+else
+    alias ls="ls -F"
+fi
 alias l="ls -lAh"
 alias ll="ls -al"
 alias la="ls -A"
