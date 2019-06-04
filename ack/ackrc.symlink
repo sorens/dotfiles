@@ -17,3 +17,4 @@ rdoc=.rdoc
 #--actionscript
 #--objc
 --ignore-dir=.idea
+--ignore-file=is:tags
