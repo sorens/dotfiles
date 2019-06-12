@@ -13,10 +13,11 @@ then
 fi
 
 # Core utilities
-brew install ack wget tree tmux
+brew install ack wget tree tmux ripgrep
+brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 
 # Editors
-brew install neovim/neovim/neovim
+brew install neovim
 
 # Networking
 brew install nmap hping httpie
