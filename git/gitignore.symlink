@@ -6,4 +6,4 @@ Session.vim
 *.rbc
 **/*.xcodeproj/xcuserdata
 **/*.xcworkspace/xcuserdata
-/tags
+tags
