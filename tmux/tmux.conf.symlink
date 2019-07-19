@@ -70,3 +70,6 @@ bind-key -n M-S-Left swap-window -t -1
 bind-key -n M-S-Right swap-window -t +1
 
 bind-key k send-keys -R \; clear-history
+
+# tmux-in-tmux trickery
+bind-key -n C-, send-prefix
