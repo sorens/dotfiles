@@ -51,7 +51,22 @@ bind-key -T copy-mode-vi ] send-keys -X copy-selection
 # Miscellaneous bindings
 
 bind-key e resize-pane -x 70
-bind-key -n S-Left swap-window -t -1
-bind-key -n S-Right swap-window -t +1
+bind-key -n S-Left prev
+bind-key -n S-Right next
+
+# The following key bindings require special settings in macOS Terminal.app. In
+# Settings > Profiles > (your profile) > Keyboard:
+# - Make Opt+Shift+Left send \033[1;4D
+# - Make Opt+Shift+Right send \033[1;4C
+#
+# If instead Ctrl-Shift is desired as the modifier sequence, that'd be:
+# - Ctrl-Shift-Left sends \033[1;6D
+# - Ctrl-Shift-Right sends \033[1;6C
+#
+# See for details:
+# - https://github.com/tmux/tmux/issues/786#issuecomment-280918681
+# - https://github.com/tmux/tmux/issues/786#issuecomment-280919133
+bind-key -n M-S-Left swap-window -t -1
+bind-key -n M-S-Right swap-window -t +1
 
 bind-key k send-keys -R \; clear-history
