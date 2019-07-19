@@ -1,2 +1,6 @@
 --glob
 !tags
+--glob
+!node_modules
+--glob
+!.git
