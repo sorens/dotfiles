@@ -4,7 +4,7 @@
 
 set -g mouse on
 
-set -g history-limit 80000
+set -g history-limit 900000
 
 # Disable auto-renaming of windows (╯°□°）╯_|______|_
 set -g allow-rename off
