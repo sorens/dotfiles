@@ -12,6 +12,7 @@ set -g allow-rename off
 # Appease neovim (╯°□°）╯_|______|_
 set -g default-terminal "screen-256color"
 set-option -sg escape-time 10
+set-option -ga terminal-overrides ",*256col*:Tc"
 
 # set -g status-right-length 120
 # set -g status-right '#(zsh -c "cd #{pane_current_path}; print -P %%2~") %a %I:%M %p'
