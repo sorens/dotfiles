@@ -67,8 +67,8 @@ bind-key -n S-Right next
 # See for details:
 # - https://github.com/tmux/tmux/issues/786#issuecomment-280918681
 # - https://github.com/tmux/tmux/issues/786#issuecomment-280919133
-bind-key -n M-S-Left swap-window -t -1
-bind-key -n M-S-Right swap-window -t +1
+bind-key -n M-S-Left swap-window -t -1 \; previous-window
+bind-key -n M-S-Right swap-window -t +1 \; next-window
 
 bind-key k send-keys -R \; clear-history
 
