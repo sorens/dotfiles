@@ -67,8 +67,12 @@ bind-key -n S-Right next
 # See for details:
 # - https://github.com/tmux/tmux/issues/786#issuecomment-280918681
 # - https://github.com/tmux/tmux/issues/786#issuecomment-280919133
-bind-key -n M-S-Left swap-window -t -1 \; previous-window
-bind-key -n M-S-Right swap-window -t +1 \; next-window
+#
+# We use -d to restore the old window swapping behavior that selects the
+# position the window was swapped to. See:
+# - https://github.com/tmux/tmux/issues/1879
+bind-key -n M-S-Left swap-window -d -t -1
+bind-key -n M-S-Right swap-window -d -t +1
 
 bind-key k send-keys -R \; clear-history
 
