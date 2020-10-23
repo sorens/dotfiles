@@ -4,3 +4,7 @@
 !node_modules
 --glob
 !.git
+--glob
+!sorbet/rbi
+--glob
+!sorbet/rails-rbi
