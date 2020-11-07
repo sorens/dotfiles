@@ -30,7 +30,8 @@ brew tap heroku/brew
 brew install awscli heroku ansible terraform packer
 
 # gpg used for signing git commits and other encryption
-brew install gpg
+# brew install gpg
+# Don't install gpg via brew, instead install via https://gpgtools.org/
 
 # update to the latest git
 brew install git
