@@ -10,6 +10,7 @@ alias ..='cd ..'
 alias tree='tree -C'
 
 alias reload!='. ~/.zshrc'
+alias workspace='cd ~/src'
 
 alias tf='terraform'
 
