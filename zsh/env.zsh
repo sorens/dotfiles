@@ -11,16 +11,7 @@ export PROMPT=$'%F{blue}%~%f %#> '
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
 export FZF_DEFAULT_COMMAND='rg --files --hidden'
 
-# Only set this if we haven't set $EDITOR up somewhere else previously.
-if [[ "$EDITOR" == "" ]] ; then
-  export EDITOR='vim'
-fi
-
-# FFFFFUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU
-# Setting $EDITOR to 'vim' changes zsh's keybindings! WHAT THE HELL.
-# `bindkey -e` sets us back to the standard keybindings mode (which is more
-# like emacs).
-bindkey -e
+export EDITOR="~/bin/subl"
 
 # We enable up/down arrow history search already in zsh/completion.zsh, but on
 # some Linux systems, the side effect of setting `vim` as $EDITOR enables
