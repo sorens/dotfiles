@@ -6,7 +6,9 @@
 [difftool]
   prompt = false
 [mergetool]
-  keepBackup = false
+  keepback = true
+  prompt = false
+  keepBackup = true
 [diff]
   renames = copies
   mnemonicprefix = true
@@ -24,6 +26,10 @@
   wtf     = !$ZSH/bin/git-wtf
   rank-contributers = !$ZSH/bin/git-rank-contributers
   count   = !git shortlog -sn
+  st = status
+  br = branch
+  unstage = reset HEAD --
+  last = log -1 HEAD
 [color]
   diff = auto
   status = auto
@@ -31,8 +37,10 @@
   ui = auto
 [core]
   excludesfile = ~/.gitignore
-  editor = vim
+  editor = subl -w
   whitespace = cr-at-eol
+  pager = less -Xr
+  autocrlf = input
 [branch]
   autosetupmerge = true
   autosetuprebase = always
@@ -60,3 +68,8 @@
   prompt = false
 [url "git@github.com:"]
 	insteadOf = https://github.com/
+[filter "lfs"]
+  process = git-lfs filter-process
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
