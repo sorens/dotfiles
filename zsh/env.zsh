@@ -1,6 +1,6 @@
 # PATH and related things
 
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:~/bin
 export PATH=/usr/local/opt/go/libexec/bin:$PATH
 export GOPATH=$HOME
 
