@@ -6,7 +6,7 @@ export GOPATH=$HOME
 
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 
-export PROMPT=$'%# '
+export PROMPT=$'%F{blue}%~%f %#> '
 
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
 export FZF_DEFAULT_COMMAND='rg --files --hidden'
