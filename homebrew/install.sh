@@ -9,7 +9,7 @@
 if test ! $(which brew)
 then
   echo "  Homebrew not installed; installing..."
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
 # Core utilities
