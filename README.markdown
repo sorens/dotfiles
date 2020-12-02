@@ -1,4 +1,4 @@
-# sorens does dotfiles
+# steve's dotfiles
 
 ## dotfiles
 
