@@ -44,5 +44,11 @@ There's a few special files in the hierarchy.
   but still keep those autoloaded files in your home directory. These get
   symlinked in when you run `script/bootstrap`.
 
+## git commit signing via ssh key
+* https://calebhearth.com/sign-git-with-ssh
+
+## go language download
+* https://go.dev/dl/
+
 ## thanks
 * original fork from @codykrieger [dotfiles](https://github.com/codykrieger/dotfiles)

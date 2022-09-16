@@ -28,9 +28,5 @@ brew install gh
 # IaaS/PaaS, devops tools
 brew install awscli ansible terraform packer
 
-# gpg used for signing git commits and other encryption
-# brew install gpg
-# Don't install gpg via brew, instead install via https://gpgtools.org/
-
 # update to the latest git
 brew install git
