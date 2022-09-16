@@ -5,12 +5,12 @@
 ```sh
 git clone https://github.com/sorens/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
+# set up dotfiles
 script/bootstrap
-```
-To install the various custom components:
-```sh
-cd script
-./install
+# reload! all the paths and ENV variables
+reload!
+# run this script at the start and periodically to install/update
+bin/dot
 ```
 
 This will symlink the appropriate files in `.dotfiles` to your home directory.
