@@ -35,9 +35,8 @@ defaults -currentHost write -g com.apple.mouse.tapBehavior -int 1
 defaults write -g com.apple.mouse.tapBehavior -int 1
 
 # Use scroll gesture with the Ctrl (^) modifier key to zoom.
-defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
-defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
-defaults write com.apple.universalaccess closeViewSmoothImages -bool false
+# fixme 'defaults[78666:531050] Could not write domain com.apple.universalaccess; exiting'
+# defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 
 # ****************************
 # Finder
@@ -107,7 +106,6 @@ defaults write com.apple.mail NumberOfSnippetLines -int 1
 defaults write com.apple.mail JunkMailBehavior -int 0
 defaults write com.apple.mail ConversationViewMarkAllAsRead -bool true
 
-defaults write com.apple.mail-shared DisableURLLoading -bool true
 
 # ****************************
 # Disk Utility
