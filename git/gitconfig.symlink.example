@@ -37,7 +37,7 @@
   ui = auto
 [core]
   excludesfile = ~/.gitignore
-  editor = subl -w
+  editor = /usr/loca/bin/code -w
   whitespace = cr-at-eol
   pager = less -Xr
   autocrlf = input
