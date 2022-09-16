@@ -10,7 +10,6 @@ export PATH=/sbin:$PATH
 export PATH=$HOME/src/bin:$PATH
 export PATH=/usr/local/go/bin:$PATH
 export PATH=/usr/local/opt/go/libexec/bin:$PATH
-export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin":$PATH
 export GOPATH=$HOME/src
 
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
@@ -20,7 +19,7 @@ export PROMPT=$'%F{blue}%~%f %#> '
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
 export FZF_DEFAULT_COMMAND='rg --files --hidden'
 
-export EDITOR="/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
+export EDITOR="/usr/local/bin/code"
 
 # opt out of homebrew analytics
 export HOMEBREW_NO_ANALYTICS=1
