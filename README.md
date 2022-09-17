@@ -53,5 +53,17 @@ There's a few special files in the hierarchy.
 ## macOS defaults
 * https://macos-defaults.com
 
+## fonts
+Run the `os-x/fonts.sh` script to additional download fonts. You will need to install them manually. The fonts to be downloaded:
+* https://fonts.google.com/download?family=Source%20Code%20Pro
+* https://devimages-cdn.apple.com/design/resources/download/SF-Pro.dmg
+* https://devimages-cdn.apple.com/design/resources/download/SF-Compact.dmg
+* https://devimages-cdn.apple.com/design/resources/download/SF-Mono.dmg
+* https://devimages-cdn.apple.com/design/resources/download/NY.dmg
+
+```sh
+$ ~/.dotfiles/os-x/fonts.sh
+```
+
 ## thanks
 * original fork from @codykrieger [dotfiles](https://github.com/codykrieger/dotfiles)
