@@ -50,5 +50,8 @@ There's a few special files in the hierarchy.
 ## go language download
 * https://go.dev/dl/
 
+## macOS defaults
+* https://macos-defaults.com
+
 ## thanks
 * original fork from @codykrieger [dotfiles](https://github.com/codykrieger/dotfiles)

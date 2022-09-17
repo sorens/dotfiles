@@ -39,6 +39,16 @@ defaults write -g com.apple.mouse.tapBehavior -int 1
 # defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 
 # ****************************
+# Dock
+# ****************************
+
+# scale effect
+defaults write com.apple.dock "mineffect" -string "scale" 
+defaults write com.apple.dock "tilesize" -int "48" 
+defaults write com.apple.dock "orientation" -string "left"
+killall Dock
+
+# ****************************
 # Finder
 # ****************************
 
@@ -137,7 +147,27 @@ defaults write -g com.apple.sound.beep.feedback -bool true
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool YES
 
 # ****************************
+# Screen Capture
+# ****************************
+
+# Include data/time
+defaults write com.apple.screencapture "include-date" -bool "true"
+mkdir -p ~/Pictures/Screenshots
+defaults write com.apple.screencapture "location" -string "~/Pictures/Screenshots"
+killall SystemUIServer
+
+# ****************************
+# Desktop
+# ****************************
+defaults write com.apple.finder "CreateDesktop" -bool "false"
+defaults write com.apple.finder "ShowHardDrivesOnDesktop" -bool "true"
+defaults write com.apple.finder "ShowExternalHardDrivesOnDesktop" -bool "false" 
+defaults write com.apple.finder "ShowRemovableMediaOnDesktop" -bool "false"
+defaults write com.apple.finder "ShowMountedServersOnDesktop" -bool "true"
+killall Finder
+
+# ****************************
 # Cleanup, etc.
 # ****************************
 
-echo "Done setting up OS X preferences! NOTE: Some of these changes require a logout or restart to take effect."
+echo "OS X preferences set. Please logout/reboot to see full changes."
