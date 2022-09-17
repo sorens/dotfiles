@@ -159,7 +159,7 @@ killall SystemUIServer
 # ****************************
 # Desktop
 # ****************************
-defaults write com.apple.finder "CreateDesktop" -bool "false"
+defaults write com.apple.finder "CreateDesktop" -bool "true"
 defaults write com.apple.finder "ShowHardDrivesOnDesktop" -bool "true"
 defaults write com.apple.finder "ShowExternalHardDrivesOnDesktop" -bool "false" 
 defaults write com.apple.finder "ShowRemovableMediaOnDesktop" -bool "false"
