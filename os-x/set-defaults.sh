@@ -16,11 +16,11 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 
 # Disable autocorrect.
 defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
-
 defaults write -g NSAutomaticDashSubstitutionEnabled -bool false
 
-# Set a really fast key repeat.
-defaults write -g KeyRepeat -int 0
+# Set a slightly fast key repeat.
+defaults write -g InitialKeyRepeat -int 15  # normal minimum is 15 (225 ms)
+defaults write -g KeyRepeat -int 2          # normal minimum is 2 (30 ms)
 
 # Enable full keyboard access.
 defaults write -g AppleKeyboardUIMode -int 3
