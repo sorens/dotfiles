@@ -167,6 +167,11 @@ defaults write com.apple.finder "ShowMountedServersOnDesktop" -bool "true"
 killall Finder
 
 # ****************************
+# Menubar
+# ****************************
+defaults write com.apple.menuextra.clock "DateFormat" -string "\"EEE MMM d  h:mm:ss a\""
+
+# ****************************
 # Cleanup, etc.
 # ****************************
 
