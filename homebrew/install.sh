@@ -29,4 +29,4 @@ brew install gh
 brew install awscli ansible terraform packer
 
 # update to the latest git
-brew install git
+brew install git git-lfs
