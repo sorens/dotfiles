@@ -18,14 +18,6 @@ if which nvim 2>&1 > /dev/null ; then
     alias vim='nvim'
 fi
 
-# Use `hub` as our git wrapper:
-#   http://defunkt.github.com/hub/
-hub_path=$(which hub)
-if (( $+commands[hub] ))
-then
-    alias git=$hub_path
-fi
-
 alias g='git'
 alias ga='git add'
 alias gl='git pull'
@@ -49,3 +41,5 @@ alias gsr='git svn rebase'
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias grm="git status | grep deleted | awk '{\$1=\$2=\"\"; print \$0}' | \
            perl -pe 's/^[ \t]*//' | sed 's/ /\\\\ /g' | xargs git rm"
+
+alias gcs="git show --show-signature"
