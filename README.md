@@ -47,6 +47,15 @@ There's a few special files in the hierarchy.
 ## git commit signing via ssh key
 * https://calebhearth.com/sign-git-with-ssh
 
+note: Tower can override some settings and break signing.
+
+```shell
+$ git config --global commit.gpgsign true
+$ git config --global gpg.format ssh
+$ ssh-add -L
+$ git config --global user.signingkey "ssh-ed25519 <your key id>"
+```
+
 ## go language download
 * https://go.dev/dl/
 
