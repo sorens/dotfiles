@@ -1,10 +1,8 @@
 # PATH and related things
 
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
-export PATH=/usr/local/opt/go/libexec/bin:$PATH
-export GOPATH=$HOME
-
-export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
+export PATH="$HOME/bin:/opt/homebrew/bin:$PATH"
+export MANPATH="/opt/homebrew/share/man:$MANPATH"
+export GOPATH="$HOME"
 
 export PROMPT=$'%# '
 
@@ -38,3 +36,4 @@ if [[ "${terminfo[kcud1]}" != "" ]]; then
 fi
 
 if which rbenv > /dev/null ; then eval "$(rbenv init -)" ; fi
+if [ -f "$HOME/.cargo/env" ] ; then . "$HOME/.cargo/env" ; fi
