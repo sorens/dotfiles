@@ -1,6 +1,6 @@
 # PATH and related things
 
-export PATH=$HOME/bin
+export PATH="$HOME/bin:/opt/homebrew/bin:$PATH"
 export PATH=$ZSH/bin:$PATH
 export PATH=/usr/bin:$PATH
 export PATH=/usr/sbin:$PATH
@@ -11,8 +11,10 @@ export PATH=/sbin:$PATH
 export PATH=$HOME/src/bin:$PATH
 export PATH=/usr/local/go/bin:$PATH
 export PATH=/usr/local/opt/go/libexec/bin:$PATH
-export GOPATH=$HOME/src
+export GOPATH="$HOME/src"
 
+
+export MANPATH="/opt/homebrew/share/man:$MANPATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 
 export PROMPT=$'%F{blue}%~%f %#> '
@@ -48,4 +50,6 @@ if [[ "${terminfo[kcud1]}" != "" ]]; then
   bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
 fi
 
+if which rtx > /dev/null ; then eval "$(rtx activate -qs zsh)" ; fi
 eval "$(rtx activate -qs zsh)"
+if [ -f "$HOME/.cargo/env" ] ; then . "$HOME/.cargo/env" ; fi
