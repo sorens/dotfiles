@@ -7,3 +7,5 @@ Session.vim
 **/*.xcodeproj/xcuserdata
 **/*.xcworkspace/xcuserdata
 tags
+.vscode/
+__debug_bin*
