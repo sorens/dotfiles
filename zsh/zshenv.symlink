@@ -1,1 +1,5 @@
-if which rbenv > /dev/null ; then eval "$(rbenv init -)" ; fi
+# Hax. /usr/libexec/path_helper runs as part of /etc/zprofile, which is
+# evaluated after ~/.zshenv. path_helper, stupidly, does not modify and export
+# MANPATH unless it is already set. So we set it here to kick path_helper into
+# doing the right thing.
+export MANPATH=""
