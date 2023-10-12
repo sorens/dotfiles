@@ -48,4 +48,4 @@ if [[ "${terminfo[kcud1]}" != "" ]]; then
   bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
 fi
 
-if which rbenv > /dev/null ; then eval "$(rbenv init -)" ; fi
+eval "$(rtx activate -qs zsh)"
