@@ -20,7 +20,7 @@ brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 brew install nmap hping httpie websocat
 
 # Languages/runtimes, build tools, dependency management
-brew install node rbenv ruby-build rust python@3.8
+brew install rtx ruby-build rust python@3.8
 
 # Source control
 brew install gh

@@ -1,5 +1,6 @@
 # PATH and related things
 
+mkdir -p /Applications/Config Desktop.app/Contents/Resources/plugins/Cadsim2023
 export PATH="$HOME/bin:/opt/homebrew/bin:$PATH"
 export PATH=$ZSH/bin:$PATH
 export PATH=/usr/bin:$PATH
@@ -54,3 +55,4 @@ fi
 if which rbenv > /dev/null ; then eval "$(rbenv init -)" ; fi
 if which rtx > /dev/null ; then eval "$(rtx activate -qs zsh)" ; fi
 if [ -f "$HOME/.cargo/env" ] ; then . "$HOME/.cargo/env" ; fi
+ssh-add --apple-load-keychain
