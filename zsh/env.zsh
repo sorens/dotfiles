@@ -12,7 +12,6 @@ export PATH=/sbin:$PATH
 export PATH=$HOME/src/bin:$PATH
 export PATH=/usr/local/go/bin:$PATH
 export PATH=/usr/local/opt/go/libexec/bin:$PATH
-export PATH="/Applications/Config Desktop.app/Contents/Resources/plugins/Cadsim2023:$PATH"
 
 export GOPATH="$HOME/src"
 
