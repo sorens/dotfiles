@@ -1,6 +1,5 @@
 # PATH and related things
 
-mkdir -p /Applications/Config Desktop.app/Contents/Resources/plugins/Cadsim2023
 export PATH="$HOME/bin:/opt/homebrew/bin:$PATH"
 export PATH=$ZSH/bin:$PATH
 export PATH=/usr/bin:$PATH

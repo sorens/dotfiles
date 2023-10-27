@@ -18,6 +18,7 @@ if which nvim 2>&1 > /dev/null ; then
     alias vim='nvim'
 fi
 
+# git
 alias g='git'
 alias ga='git add'
 alias gl='git pull'
@@ -35,11 +36,11 @@ alias gsu='git submodule'
 alias gf='git fetch'
 alias gfp='git format-patch'
 alias gse='git send-email'
-
 alias gsr='git svn rebase'
-
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias grm="git status | grep deleted | awk '{\$1=\$2=\"\"; print \$0}' | \
            perl -pe 's/^[ \t]*//' | sed 's/ /\\\\ /g' | xargs git rm"
-
 alias gcs="git show --show-signature"
+alias gdh="git diff HEAD"
+
+alias space='cd ~/src/github.com/sorens/spacex'
