@@ -51,6 +51,6 @@ if [[ "${terminfo[kcud1]}" != "" ]]; then
 fi
 
 if which rbenv > /dev/null ; then eval "$(rbenv init -)" ; fi
-if which rtx > /dev/null ; then eval "$(rtx activate -qs zsh)" ; fi
+if which mise > /dev/null ; then eval "$(mise activate -qs zsh)" ; fi
 if [ -f "$HOME/.cargo/env" ] ; then . "$HOME/.cargo/env" ; fi
 ssh-add --apple-load-keychain
