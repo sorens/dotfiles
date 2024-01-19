@@ -9,3 +9,4 @@ Session.vim
 tags
 .vscode/
 __debug_bin*
+sko.Makefile
