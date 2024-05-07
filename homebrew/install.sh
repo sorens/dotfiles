@@ -13,7 +13,7 @@ then
 fi
 
 # Core utilities
-brew install ack wget tree tmux ripgrep shellcheck jq
+brew install ack wget tree tmux ripgrep shellcheck jq wader/tap/fq
 brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 
 # Networking
