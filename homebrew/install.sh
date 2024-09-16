@@ -26,7 +26,10 @@ brew install mise ruby-build python@3.8
 brew install gh
 
 # IaaS/PaaS, devops tools
-brew install awscli ansible terraform packer
+brew install awscli ansible hashicorp/tap/terraform hashicorp/tap/packer
 
 # update to the latest git
 brew install git git-lfs
+
+# security
+brew install 1password-cli
