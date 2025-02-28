@@ -45,7 +45,7 @@ defaults write -g com.apple.mouse.tapBehavior -int 1
 # scale effect
 defaults write com.apple.dock "mineffect" -string "scale" 
 defaults write com.apple.dock "tilesize" -int "48" 
-defaults write com.apple.dock "orientation" -string "left"
+defaults write com.apple.dock "orientation" -string "right"
 killall Dock
 
 # ****************************
