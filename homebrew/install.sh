@@ -17,7 +17,8 @@ brew install ack wget tree tmux ripgrep shellcheck jq wader/tap/fq
 brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 
 # Networking
-brew install nmap hping httpie websocat
+brew install nmap httpie websocat
+# hping
 
 # Languages/runtimes, build tools, dependency management
 brew install mise ruby-build
