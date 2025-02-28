@@ -11,3 +11,4 @@ tags
 __debug_bin*
 sko.Makefile
 sko_scripts/
+skobuild
