@@ -9,8 +9,6 @@ export PATH=/usr/local/sbin:$PATH
 export PATH=/bin:$PATH
 export PATH=/sbin:$PATH
 export PATH=$HOME/src/bin:$PATH
-export PATH=/usr/local/go/bin:$PATH
-export PATH=/usr/local/opt/go/libexec/bin:$PATH
 
 export GOPATH="$HOME/src"
 
