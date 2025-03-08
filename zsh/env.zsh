@@ -1,7 +1,19 @@
 # PATH and related things
 
-export PATH="$HOME/bin:/opt/homebrew/bin:$PATH"
-export MANPATH="/opt/homebrew/share/man:$MANPATH"
+if [ -d /opt/homebrew/bin ] ; then
+    export PATH="/opt/homebrew/bin:$PATH"
+    export MANPATH="/opt/homebrew/share/man:$MANPATH"
+fi
+
+if [ -d "$HOME/bin" ] ; then
+    export PATH="$HOME/bin:$PATH"
+fi
+
+if [ -d /usr/local/MacGPG2/bin ] ; then
+    export PATH="${PATH/\/usr\/local\/MacGPG2\/bin:/}"
+    export PATH="/usr/local/MacGPG2/bin:$PATH"
+fi
+
 export GOPATH="$HOME"
 
 export PROMPT=$'%# '
