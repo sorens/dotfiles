@@ -16,7 +16,7 @@
     "default_profile": "ask",
     "default_model": {
       "provider": "anthropic",
-      "model": "claude-3-7-sonnet-thinking-latest"
+      "model": "claude-opus-4-latest"
     },
     "dock": "left",
     "enabled": true,
