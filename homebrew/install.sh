@@ -16,7 +16,7 @@ fi
 brew install ack wget tree tmux ripgrep shellcheck jq wader/tap/fq
 
 # Networking
-brew install nmap httpie websocat
+brew install --formula nmap httpie websocat
 # hping
 
 # Languages/runtimes, build tools, dependency management
