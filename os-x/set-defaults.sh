@@ -43,8 +43,8 @@ defaults write -g com.apple.mouse.tapBehavior -int 1
 # ****************************
 
 # scale effect
-defaults write com.apple.dock "mineffect" -string "scale" 
-defaults write com.apple.dock "tilesize" -int "48" 
+defaults write com.apple.dock "mineffect" -string "scale"
+defaults write com.apple.dock "tilesize" -int "48"
 defaults write com.apple.dock "orientation" -string "right"
 killall Dock
 
@@ -76,46 +76,12 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 # ****************************
 # Safari
 # ****************************
-
-# Show debug/development menus.
-defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
-defaults write com.apple.Safari IncludeDevelopMenu -bool true
-defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
-defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
-defaults write -g WebKitDeveloperExtras -bool true
-
-# STOP BEING ANNOYING
-defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true
-defaults write com.apple.Safari CanPromptForPushNotifications -bool false
-defaults write com.apple.Safari FindOnPageMatchesWordStartsOnly -bool false
-defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
-defaults write com.apple.Safari UniversalSearchFeatureNotificationHasBeenDisplayed -bool true
-defaults write com.apple.Safari UniversalSearchEnabled -bool false
-defaults write com.apple.Safari ShowFavoritesUnderSmartSearchField -bool false
-
-# Tab/window restoration!
-defaults write com.apple.Safari AlwaysRestoreSessionAtLaunch -bool true
-
-# Turn off parts of AutoFill (but leave username/password AutoFill on).
-defaults write com.apple.Safari AutoFillCreditCardData -bool false
-defaults write com.apple.Safari AutoFillFromAddressBook -bool false
-defaults write com.apple.Safari AutoFillMiscellaneousForms -bool false
-
-# New tabs/windows open to Empty Page.
-defaults write com.apple.Safari NewTabBehavior -int 1
-defaults write com.apple.Safari NewWindowBehavior -int 1
+# ./set-safari-defaults.sh
 
 # ****************************
 # Mail
 # ****************************
-
-# Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>`.
-defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
-
-defaults write com.apple.mail NumberOfSnippetLines -int 1
-defaults write com.apple.mail JunkMailBehavior -int 0
-defaults write com.apple.mail ConversationViewMarkAllAsRead -bool true
-
+#./set-mail-defaults.sh
 
 # ****************************
 # Disk Utility
@@ -161,7 +127,7 @@ killall SystemUIServer
 # ****************************
 defaults write com.apple.finder "CreateDesktop" -bool "true"
 defaults write com.apple.finder "ShowHardDrivesOnDesktop" -bool "true"
-defaults write com.apple.finder "ShowExternalHardDrivesOnDesktop" -bool "true" 
+defaults write com.apple.finder "ShowExternalHardDrivesOnDesktop" -bool "true"
 defaults write com.apple.finder "ShowRemovableMediaOnDesktop" -bool "true"
 defaults write com.apple.finder "ShowMountedServersOnDesktop" -bool "true"
 killall Finder
