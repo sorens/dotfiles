@@ -11,4 +11,7 @@ tags
 __debug_bin*
 sko.Makefile
 sko_scripts/
+sko_data/
 skobuild
+.bk.yaml
+**/.claude/settings.local.json
