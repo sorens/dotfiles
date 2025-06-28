@@ -31,48 +31,62 @@ symlinked without extension into `$HOME` when you run `script/bootstrap`.
 
 There's a few special files in the hierarchy.
 
-- **bin/**: Anything in `bin/` will get added to your `$PATH` and be made
-  available everywhere.
-- **topic/\*.zsh**: Any files ending in `.zsh` get loaded into your
-  environment.
-- **topic/path.zsh**: Any file named `path.zsh` is loaded first and is
-  expected to setup `$PATH` or similar.
-- **topic/completion.zsh**: Any file named `completion.zsh` is loaded
-  last and is expected to setup autocomplete.
-- **topic/\*.symlink**: Any files ending in `*.symlink` get symlinked into
-  your `$HOME`. This is so you can keep all of those versioned in your dotfiles
-  but still keep those autoloaded files in your home directory. These get
-  symlinked in when you run `script/bootstrap`.
+- `bin/`
+  - Anything in `bin/` will get added to your `$PATH` and be made available everywhere.
+- `topic/\*.zsh`
+  - Any files ending in `.zsh` get loaded into your environment.
+- `topic/path.zsh`
+  - Any file named `path.zsh` is loaded first and is expected to setup `$PATH` or similar.
+- `topic/completion.zsh`
+  - Any file named `completion.zsh` is loaded last and is expected to setup autocomplete.
+- `topic/\*.symlink`
+  - Any files ending in `*.symlink` get symlinked into your `$HOME`.
+  - You can keep all of those versioned in your dotfiles but still keep those autoloaded files in your home directory.
+  - These get symlinked in when you run `script/bootstrap`.
 
 ## git commit signing via ssh key
-* https://calebhearth.com/sign-git-with-ssh
+
+- https://calebhearth.com/sign-git-with-ssh
 
 note: Tower can override some settings and break signing.
 
-```shell
-$ git config --global commit.gpgsign true
-$ git config --global gpg.format ssh
-$ ssh-add -L
-$ git config --global user.signingkey "ssh-ed25519 <your key id>"
+```sh
+git config --global commit.gpgsign true
+git config --global gpg.format ssh
+ssh-add -L
+git config --global user.signingkey "ssh-ed25519 <your key id>"
 ```
 
 ## go language download
-* https://go.dev/dl/
+
+note: go can (should) now be installed via `mise` by creating `.tool-versions` files where appropriate.
+
+```
+go 1.24.4
+```
+
+- https://go.dev/dl/
 
 ## macOS defaults
-* https://macos-defaults.com
+
+note: macOS 15.5, defaults for Safari and Mail are no longer possible. Perhaps this happened. 🤷🏻
+
+- https://macos-defaults.com
 
 ## fonts
+
 Run the `os-x/fonts.sh` script to additional download fonts. You will need to install them manually. The fonts to be downloaded:
-* https://fonts.google.com/download?family=Source%20Code%20Pro
-* https://devimages-cdn.apple.com/design/resources/download/SF-Pro.dmg
-* https://devimages-cdn.apple.com/design/resources/download/SF-Compact.dmg
-* https://devimages-cdn.apple.com/design/resources/download/SF-Mono.dmg
-* https://devimages-cdn.apple.com/design/resources/download/NY.dmg
+
+- [Source Code Pro @ google](https://fonts.google.com/download?family=Source%20Code%20Pro)
+- [SF Pro @ apple](https://devimages-cdn.apple.com/design/resources/download/SF-Pro.dmg)
+- [SF Compact @ apple](https://devimages-cdn.apple.com/design/resources/download/SF-Compact.dmg)
+- [SF Mono @ apple](https://devimages-cdn.apple.com/design/resources/download/SF-Mono.dmg)
+- [NY @ apple](https://devimages-cdn.apple.com/design/resources/download/NY.dmg)
 
 ```sh
-$ ~/.dotfiles/os-x/fonts.sh
+~/.dotfiles/os-x/fonts.sh
 ```
 
 ## thanks
-* original fork from @codykrieger [dotfiles](https://github.com/codykrieger/dotfiles)
+
+- original fork from @codykrieger [dotfiles](https://github.com/codykrieger/dotfiles)
