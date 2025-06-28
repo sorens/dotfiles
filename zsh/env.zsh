@@ -1,19 +1,20 @@
 # PATH and related things
 
-export PATH="$HOME/bin:/opt/homebrew/bin:$PATH"
-export PATH=$ZSH/bin:$PATH
-export PATH=/usr/bin:$PATH
-export PATH=/usr/sbin:$PATH
-export PATH=/usr/local/bin:$PATH
-export PATH=/usr/local/sbin:$PATH
-export PATH=/bin:$PATH
-export PATH=/sbin:$PATH
-export PATH=$HOME/src/bin:$PATH
+if [ -d /opt/homebrew/bin ] ; then
+    export PATH="/opt/homebrew/bin:$PATH"
+    export MANPATH="/opt/homebrew/share/man:$MANPATH"
+fi
+
+if [ -d "$HOME/bin" ] ; then
+    export PATH="$HOME/bin:$PATH"
+fi
+
+if [ -d /usr/local/MacGPG2/bin ] ; then
+    export PATH="${PATH/\/usr\/local\/MacGPG2\/bin:/}"
+    export PATH="/usr/local/MacGPG2/bin:$PATH"
+fi
 
 export GOPATH="$HOME/src"
-
-export MANPATH="/opt/homebrew/share/man:$MANPATH"
-export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 
 export PROMPT=$'%F{blue}%~%f %#> '
 
@@ -21,6 +22,10 @@ export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
 export FZF_DEFAULT_COMMAND='rg --files --hidden'
 
 export EDITOR="/usr/local/bin/code"
+# Only set this if we haven't set $EDITOR up somewhere else previously.
+if [[ "$EDITOR" == "" ]] ; then
+  export EDITOR='zed'
+fi
 
 # opt out of homebrew analytics
 export HOMEBREW_NO_ANALYTICS=1
