@@ -1,0 +1,83 @@
+// Zed settings
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+//
+// command palette
+{
+  "agent": {
+    "always_allow_tool_actions": false,
+    "commit_message_model": {
+      "provider": "anthropic",
+      "model": "claude-opus-4-latest"
+    },
+    "default_profile": "ask",
+    "default_model": {
+      "provider": "anthropic",
+      "model": "claude-3-7-sonnet-thinking-latest"
+    },
+    "dock": "left",
+    "enabled": true,
+    "version": "2"
+  },
+  "agent_font_size": 24,
+  "debugger": {
+    "dock": "left"
+  },
+  "diagnostics": {
+    "button": true,
+    "include_warnings": true,
+    "lsp_pull_diagnostics": {
+      "enabled": true,
+      "debounce_ms": 50
+    },
+    "inline": {
+      "enabled": true, // yes, display diagnostic info to the right of a line
+      "update_debounce_ms": 300,
+      "padding": 4,
+      "min_column": 80,
+      "max_severity": "warning"
+    },
+    "cargo": null
+  },
+  "features": {
+    "edit_prediction_provider": "none" // potentially slows down editing
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+  "project_panel": {
+    "show_diagnostics": "all",
+    "dock": "right",
+    "git_status": true
+  },
+  "tabs": {
+    "show_diagnostics": "all" // does not work, `off` only behavior
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "terminal": {
+    "dock": "bottom",
+    "font_family": "Source Code Pro",
+    "font_size": 20
+  },
+  "theme": {
+    "mode": "system",
+    "light": "Xcode High Contrast Darker",
+    "dark": "na86"
+  },
+  "base_keymap": "VSCode",
+  "buffer_font_family": "SF Mono",
+  "buffer_font_size": 20,
+  "diagnostics_max_severity": null,
+  "extend_comment_on_newline": false,
+  "format_on_save": "on",
+  "icon_theme": "Material Icon Theme",
+  "ui_font_size": 24
+}
