@@ -198,7 +198,7 @@
             "font_weight": 500
           },
           "function": {
-            "color": "#0000FF",
+            "color": "#FF4500",
             "font_style": "normal",
             "font_weight": 500
           },
@@ -208,7 +208,7 @@
             "font_weight": 500
           },
           "keyword": {
-            "color": "#00FF00",
+            "color": "#0000FF",
             "font_style": "normal",
             "font_weight": 500
           },
@@ -358,7 +358,7 @@
             "font_weight": 500
           },
           "function.method": {
-            "color": "#00FF00",
+            "color": "#FF00FF",
             "font_style": "normal",
             "font_weight": 500
           },
