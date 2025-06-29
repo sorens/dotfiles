@@ -158,17 +158,17 @@
             "font_weight": 500
           },
           "comment": {
-            "color": "#00FF0095",
+            "color": "#90EE9080",
             "font_style": "normal",
             "font_weight": 500
           },
           "comment.doc": {
-            "color": "#00FF0095",
+            "color": "#90EE9080",
             "font_style": "normal",
             "font_weight": 500
           },
           "constant": {
-            "color": "#00FF00",
+            "color": "#0000FF", // blue
             "font_style": "normal",
             "font_weight": 500
           },
@@ -183,17 +183,17 @@
             "font_weight": 500
           },
           "emphasis": {
-            "color": "#00FF00",
+            "color": "#00FF00", // green
             "font_style": "normal",
             "font_weight": 500
           },
           "emphasis.strong": {
-            "color": "#00FF00",
+            "color": "#00FF00", // green
             "font_style": "normal",
             "font_weight": 500
           },
           "enum": {
-            "color": "#00FF00",
+            "color": "#00FF00", // green
             "font_style": "normal",
             "font_weight": 500
           },
@@ -203,157 +203,157 @@
             "font_weight": 500
           },
           "hint": {
-            "color": "#00FF00",
+            "color": "#00FF00", // green
             "font_style": "normal",
             "font_weight": 500
           },
           "keyword": {
-            "color": "#0000FF",
+            "color": "#0000FF", // blue
             "font_style": "normal",
             "font_weight": 500
           },
           "label": {
-            "color": "#00FF00",
+            "color": "#00FF00", // green
             "font_style": "normal",
             "font_weight": 500
           },
           "link_text": {
-            "color": "#00FF00",
+            "color": "#00FF00", // green
             "font_style": "normal",
             "font_weight": 500
           },
           "link_uri": {
-            "color": "#00FF00",
+            "color": "#00FF00", // green
             "font_style": "normal",
             "font_weight": 500
           },
           "number": {
-            "color": "#00FF00",
+            "color": "#00FF00", // green
             "font_style": "normal",
             "font_weight": 500
           },
           "operator": {
-            "color": "#00FF00",
+            "color": "#00FF00", // green
             "font_style": "normal",
             "font_weight": 500
           },
           "predictive": {
-            "color": "#00FF00",
+            "color": "#00FF00", // green
             "font_style": "normal",
             "font_weight": 500
           },
           "preproc": {
-            "color": "#00FF00",
+            "color": "#00FF00", // green
             "font_style": "normal",
             "font_weight": 500
           },
           "primary": {
-            "color": "#00FF00",
+            "color": "#00FF00", // green
             "font_style": "normal",
             "font_weight": 500
           },
           "property": {
-            "color": "#00FF00",
+            "color": "#00FF00", // green
             "font_style": "normal",
             "font_weight": 500
           },
           "punctuation": {
-            "color": "#00FF00",
+            "color": "#00FF00", // green
             "font_style": "normal",
             "font_weight": 500
           },
           "punctuation.bracket": {
-            "color": "#00FF00",
+            "color": "#00FF00", // green
             "font_style": "normal",
             "font_weight": 500
           },
           "punctuation.delimiter": {
-            "color": "#00FF00",
+            "color": "#00FF00", // green
             "font_style": "normal",
             "font_weight": 500
           },
           "punctuation.list_marker": {
-            "color": "#00FF00",
+            "color": "#00FF00", // green
             "font_style": "normal",
             "font_weight": 500
           },
           "punctuation.special": {
-            "color": "#00FF00",
+            "color": "#00FF00", // green
             "font_style": "normal",
             "font_weight": 500
           },
           "string": {
-            "color": "#00FF00",
+            "color": "#00FF00", // green
             "font_style": "normal",
             "font_weight": 500
           },
           "string.escape": {
-            "color": "#00FF00",
+            "color": "#00FF00", // green
             "font_style": "normal",
             "font_weight": 500
           },
           "string.regex": {
-            "color": "#00FF00",
+            "color": "#00FF00", // green
             "font_style": "normal",
             "font_weight": 500
           },
           "string.special": {
-            "color": "#00FF00",
+            "color": "#00FF00", // green
             "font_style": "normal",
             "font_weight": 500
           },
           "string.special.symbol": {
-            "color": "#00FF00",
+            "color": "#00FF00", // green
             "font_style": "normal",
             "font_weight": 500
           },
           "tag": {
-            "color": "#00FF00",
+            "color": "#00FF00", // green
             "font_style": "normal",
             "font_weight": 500
           },
           "text.literal": {
-            "color": "#00FF00",
+            "color": "#00FF00", // green
             "font_style": "normal",
             "font_weight": 500
           },
           "title": {
-            "color": "#00FF00",
+            "color": "#00FF00", // green
             "font_style": "normal",
             "font_weight": 500
           },
           "type": {
-            "color": "#00FF00",
+            "color": "#00FF00", // green
             "font_style": "normal",
             "font_weight": 500
           },
           "type.super": {
-            "color": "#00FF00",
+            "color": "#00FF00", // green
             "font_style": "normal",
             "font_weight": 500
           },
           "variable": {
-            "color": "#00FF00",
+            "color": "#B0E0E6", // powder blue
             "font_style": "normal",
             "font_weight": 500
           },
           "variable.parameter": {
-            "color": "#00FF00",
+            "color": "#B0E0E6", // powder blue
             "font_style": "normal",
             "font_weight": 500
           },
           "variable.special": {
-            "color": "#00FF00",
+            "color": "#B0E0E6", // powder blue
             "font_style": "normal",
             "font_weight": 500
           },
           "variant": {
-            "color": "#00FF00",
+            "color": "#B0E0E6", // powder blue
             "font_style": "normal",
             "font_weight": 500
           },
           "type.builtin": {
-            "color": "#00FF00",
+            "color": "#B0E0E6", // powder blue
             "font_style": "normal",
             "font_weight": 500
           },
