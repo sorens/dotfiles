@@ -18,7 +18,7 @@
       "provider": "anthropic",
       "model": "claude-opus-4-latest"
     },
-    "dock": "left",
+    "dock": "right",
     "enabled": true,
     "version": "2"
   },
@@ -52,7 +52,7 @@
   },
   "project_panel": {
     "show_diagnostics": "all",
-    "dock": "right",
+    "dock": "left",
     "git_status": true
   },
   "tabs": {
