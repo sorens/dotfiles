@@ -69,15 +69,16 @@
   },
   "theme": {
     "mode": "system",
-    "light": "Xcode High Contrast Darker",
-    "dark": "na86"
+    "light": "XY-Zed",
+    "dark": "XY-Zed"
   },
   "base_keymap": "VSCode",
-  "buffer_font_family": "SF Mono",
+  "buffer_font_family": "Ligalex Mono",
   "buffer_font_size": 20,
   "diagnostics_max_severity": null,
   "extend_comment_on_newline": false,
   "format_on_save": "on",
   "icon_theme": "Material Icon Theme",
+  "ui_font_family": "BlexMono Nerd Font Propo",
   "ui_font_size": 24
 }
