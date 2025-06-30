@@ -119,6 +119,7 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool YES
 # Include data/time
 defaults write com.apple.screencapture "include-date" -bool "true"
 mkdir -p ~/Pictures/Screenshots
+mkdir -p ~/Pictures/Scanned
 defaults write com.apple.screencapture "location" -string "~/Pictures/Screenshots"
 killall SystemUIServer
 
