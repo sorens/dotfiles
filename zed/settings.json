@@ -50,6 +50,9 @@
       "enabled": false
     }
   },
+  "outline_panel": {
+    "dock": "right"
+  },
   "project_panel": {
     "show_diagnostics": "all",
     "dock": "left",
