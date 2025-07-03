@@ -21,7 +21,7 @@ export PROMPT=$'%F{blue}%~%f %#> '
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
 export FZF_DEFAULT_COMMAND='rg --files --hidden'
 
-export EDITOR="/usr/local/bin/code"
+export EDITOR="/usr/local/bin/zed"
 # Only set this if we haven't set $EDITOR up somewhere else previously.
 if [[ "$EDITOR" == "" ]] ; then
   export EDITOR='zed'
