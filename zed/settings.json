@@ -83,5 +83,8 @@
   "format_on_save": "on",
   "icon_theme": "Material Icon Theme",
   "ui_font_family": "BlexMono Nerd Font Propo",
-  "ui_font_size": 24
+  "ui_font_size": 24,
+  "file_types": {
+    "JSON": ["csasm", "csprt"]
+  }
 }
