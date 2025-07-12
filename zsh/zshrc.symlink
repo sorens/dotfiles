@@ -29,3 +29,8 @@ if [ -f '/Users/sorens/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/User
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/sorens/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/sorens/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+# Check if dotnet is installed
+if command -v dotnet &> /dev/null; then
+    export PATH="$HOME/.dotnet:$PATH"
+    export DOTNET_ROOT=/usr/local/share/dotnet
+fi
