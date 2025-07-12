@@ -8,7 +8,7 @@
 // command palette
 {
   "agent": {
-    "always_allow_tool_actions": false,
+    "always_allow_tool_actions": true,
     "commit_message_model": {
       "provider": "anthropic",
       "model": "claude-opus-4-latest"
@@ -16,11 +16,10 @@
     "default_profile": "ask",
     "default_model": {
       "provider": "anthropic",
-      "model": "claude-opus-4-latest"
+      "model": "claude-opus-4-thinking-latest"
     },
     "dock": "right",
-    "enabled": true,
-    "version": "2"
+    "enabled": true
   },
   "agent_font_size": 24,
   "debugger": {
