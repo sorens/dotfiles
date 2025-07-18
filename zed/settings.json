@@ -79,11 +79,26 @@
   "buffer_font_size": 20,
   "diagnostics_max_severity": null,
   "extend_comment_on_newline": false,
-  "format_on_save": "on",
   "icon_theme": "Material Icon Theme",
   "ui_font_family": "BlexMono Nerd Font Propo",
   "ui_font_size": 24,
   "file_types": {
     "JSON": ["csasm", "csprt"]
+  },
+  "languages": {
+    "C": {
+      "format_on_save": "off",
+      "use_on_type_format": false,
+      "prettier": {
+        "allowed": false
+      }
+    },
+    "C++": {
+      "format_on_save": "off",
+      "use_on_type_format": false,
+      "prettier": {
+        "allowed": false
+      }
+    }
   }
 }
