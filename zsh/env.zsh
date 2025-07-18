@@ -13,6 +13,10 @@ if [ -d "$HOME/src/bin" ] ; then
     export PATH="$HOME/src/bin:$PATH"
 fi
 
+if [ -d "/usr/local/sbin" ] ; then
+    export PATH="/usr/local/sbin:$PATH"
+fi
+
 if [ -d /usr/local/MacGPG2/bin ] ; then
     export PATH="${PATH/\/usr\/local\/MacGPG2\/bin:/}"
     export PATH="/usr/local/MacGPG2/bin:$PATH"
