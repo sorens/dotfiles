@@ -8,6 +8,30 @@
 // command palette
 {
   "agent": {
+    "profiles": {
+      "ask": {
+        "name": "Ask",
+        "tools": {
+          "terminal": true,
+          "create_directory": true,
+          "contents": true,
+          "diagnostics": true,
+          "fetch": true,
+          "list_directory": true,
+          "project_notifications": true,
+          "now": true,
+          "find_path": true,
+          "read_file": true,
+          "open": true,
+          "grep": true,
+          "thinking": true,
+          "web_search": true,
+          "copy_path": true
+        },
+        "enable_all_context_servers": false,
+        "context_servers": {}
+      }
+    },
     "always_allow_tool_actions": true,
     "commit_message_model": {
       "provider": "anthropic",
@@ -16,12 +40,12 @@
     "default_profile": "ask",
     "default_model": {
       "provider": "anthropic",
-      "model": "claude-opus-4-thinking-latest"
+      "model": "claude-sonnet-4-5-thinking-latest"
     },
     "dock": "right",
     "enabled": true
   },
-  "agent_font_size": 24,
+  "agent_ui_font_size": 24,
   "debugger": {
     "dock": "left"
   },
@@ -38,15 +62,14 @@
       "padding": 4,
       "min_column": 80,
       "max_severity": "warning"
-    },
-    "cargo": null
+    }
   },
   "features": {
     "edit_prediction_provider": "none" // potentially slows down editing
   },
   "git": {
     "inline_blame": {
-      "enabled": false
+      "enabled": true
     }
   },
   "outline_panel": {
