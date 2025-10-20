@@ -8,6 +8,8 @@ source $ZSH/zsh/windowrestoration.zsh
 source $ZSH/zsh/env.zsh
 source $ZSH/zsh/aliases.zsh
 
+plugins=(... mise)
+
 autoload -U compinit
 compinit
 
@@ -34,3 +36,4 @@ if command -v dotnet &> /dev/null; then
     export PATH="$HOME/.dotnet:$PATH"
     export DOTNET_ROOT=/usr/local/share/dotnet
 fi
+eval "$(/Users/sorens/.local/bin/mise activate zsh)"
