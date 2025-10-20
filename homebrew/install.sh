@@ -13,7 +13,7 @@ then
 fi
 
 # Core utilities
-brew install ack wget tree tmux ripgrep shellcheck jq wader/tap/fq exiftool
+brew install ack wget tree tmux ripgrep shellcheck jq wader/tap/fq exiftool bat
 
 # Networking
 brew install --formula nmap httpie websocat
