@@ -14,6 +14,7 @@ DOWNLOADS=(
   "googlechrome.dmg|https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg"
   "zed.dmg|https://zed.dev/download-success?asset=Zed-aarch64.dmg&version=0.210.4&channel=stable"
   "Xcodes.zip|https://github.com/XcodesOrg/xcodesapp/releases/latest.zip"
+  "Fantastical.zip|https://flexibits.com/fantastical/download"
 )
 
 mkdir -p "$WORK_DIR"
