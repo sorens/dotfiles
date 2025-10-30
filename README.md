@@ -75,7 +75,7 @@ note: macOS 15.5, defaults for Safari and Mail are no longer possible. Perhaps t
 
 ## fonts
 
-Run the `os-x/fonts.sh` script to additional download fonts. You will need to install them manually. The fonts to be downloaded:
+The `fonts/install.sh` script will download additional fonts. You will need to install them manually. Some of the fonts to be downloaded:
 
 - [Source Code Pro @ google](https://fonts.google.com/download?family=Source%20Code%20Pro)
 - [SF Pro @ apple](https://devimages-cdn.apple.com/design/resources/download/SF-Pro.dmg)
@@ -84,7 +84,19 @@ Run the `os-x/fonts.sh` script to additional download fonts. You will need to in
 - [NY @ apple](https://devimages-cdn.apple.com/design/resources/download/NY.dmg)
 
 ```sh
-~/.dotfiles/os-x/fonts.sh
+~/.dotfiles/fonts/install.sh
+```
+
+## apps
+
+The `apps/install.sh` script will download additional applications. You will need to install them manually. Some of the apps to be downloaded:
+
+- [Tower.zip](https://www.git-tower.com/apps/tower3-mac/497-3c2a101a/Tower-14.5-497.zip)
+- [Kaleidoscope.zip](https://kaleidoscope.app/download-v3)
+- [zed.dmg](https://zed.dev/download-success?asset=Zed-aarch64.dmg&version=0.210.4&channel=stable)
+
+```sh
+~/.dotfiles/apps/install.sh
 ```
 
 ## thanks
