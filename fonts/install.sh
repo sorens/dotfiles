@@ -3,7 +3,7 @@ set -euo pipefail
 
 WORK_DIR="$HOME/Downloads"
 DOWNLOADS=(
-  "Source_Code_Pro.zip|https://fonts.google.com/download?family=Source%20Code%20Pro"
+  "SourceCodePro-Regular-OTF.zip|https://github.com/adobe-fonts/source-code-pro/releases/download/2.042R-u%2F1.062R-i%2F1.026R-vf/OTF-source-code-pro-2.042R-u_1.062R-i.zip"
   "SF-Pro.dmg|https://devimages-cdn.apple.com/design/resources/download/SF-Pro.dmg"
   "SF-Compact.dmg|https://devimages-cdn.apple.com/design/resources/download/SF-Compact.dmg"
   "SF-Mono.dmg|https://devimages-cdn.apple.com/design/resources/download/SF-Mono.dmg"
