@@ -7,9 +7,7 @@
 //
 // command palette
 {
-  "show_wrap_guides": true,
-  "preferred_line_length": 72,
-  "soft_wrap": "preferred_line_length",
+  "show_wrap_guides": false,
   "agent": {
     "profiles": {
       "ask": {
