@@ -7,6 +7,10 @@
 //
 // command palette
 {
+  "vim_mode": false,
+  "calls": {
+    "mute_on_join": true
+  },
   "show_wrap_guides": false,
   "agent": {
     "profiles": {
@@ -38,7 +42,7 @@
       "provider": "anthropic",
       "model": "claude-opus-4-latest"
     },
-    "default_profile": "ask",
+    "default_profile": "write",
     "default_model": {
       "provider": "anthropic",
       "model": "claude-sonnet-4-5-thinking-latest"
@@ -109,6 +113,7 @@
   "file_types": {
     "JSON": ["csasm", "csprt"]
   },
+  "format_on_save": "off",
   "languages": {
     "C": {
       "format_on_save": "off",
@@ -122,6 +127,25 @@
       "use_on_type_format": false,
       "prettier": {
         "allowed": false
+      }
+    },
+    "CSharp": {
+      "format_on_save": "off",
+      "use_on_type_format": false,
+      "prettier": {
+        "allowed": false
+      }
+    },
+    "Go": {
+      "format_on_save": "on"
+    }
+  },
+  "lsp": {
+    "omnisharp": {
+      "settings": {
+        "FormattingOptions": {
+          "EnableEditorConfigSupport": true
+        }
       }
     }
   }
