@@ -29,6 +29,7 @@ alias gca='git commit -v -a'
 alias gcam='git commit -am'
 alias gco='git checkout'
 alias gb='git branch'
+alias gw='git switch'
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias gcp='git cherry-pick'
 alias glp='git log --oneline --decorate'
