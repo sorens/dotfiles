@@ -22,6 +22,10 @@ if [ -d /usr/local/MacGPG2/bin ] ; then
     export PATH="/usr/local/MacGPG2/bin:$PATH"
 fi
 
+if [ -d "$HOME/.local/bin" ] ; then
+    export PATH="$HOME/.local/bin:$PATH"
+fi
+
 export GOPATH="$HOME/src"
 
 export PROMPT=$'%F{blue}%~%f %#> '
