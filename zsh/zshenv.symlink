@@ -3,3 +3,4 @@
 # MANPATH unless it is already set. So we set it here to kick path_helper into
 # doing the right thing.
 export MANPATH=""
+. "$HOME/.cargo/env"
