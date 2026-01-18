@@ -113,7 +113,7 @@
   "file_types": {
     "JSON": ["csasm", "csprt"]
   },
-  "format_on_save": "off",
+  // "format_on_save": "off",
   "languages": {
     "C": {
       "format_on_save": "off",
@@ -137,7 +137,7 @@
       }
     },
     "Go": {
-      "format_on_save": "on"
+      // "format_on_save": "on"
     }
   },
   "lsp": {
