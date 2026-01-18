@@ -26,7 +26,11 @@ if [ -d "$HOME/.local/bin" ] ; then
     export PATH="$HOME/.local/bin:$PATH"
 fi
 
-export GOPATH="$HOME/src"
+if [ -d "$HOME/.fly/bin" ] ; then
+    export PATH="$HOME/.fly/bin:$PATH"
+fi
+
+export GOPATH="$HOME"
 
 export PROMPT=$'%F{blue}%~%f %#> '
 
