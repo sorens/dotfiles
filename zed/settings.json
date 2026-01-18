@@ -7,6 +7,15 @@
 //
 // command palette
 {
+  "agent_servers": {
+    "claude": {
+      "favorite_models": [
+        "opus"
+      ],
+      "default_config_options": {},
+      "favorite_config_option_values": {}
+    }
+  },
   "vim_mode": false,
   "calls": {
     "mute_on_join": true
@@ -45,7 +54,7 @@
     "default_profile": "write",
     "default_model": {
       "provider": "anthropic",
-      "model": "claude-sonnet-4-5-thinking-latest"
+      "model": "claude-opus-4-5-thinking-latest"
     },
     "dock": "right",
     "enabled": true
