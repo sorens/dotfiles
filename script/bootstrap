@@ -120,8 +120,22 @@ install_dotfiles () {
   done
 }
 
+install_zed_config () {
+  for name in debug.json keymap.json settings.json ; do
+    local src="$DOTFILES_ROOT/zed/$name"
+    local dest="$HOME/.config/zed/$name"
+    if [ ! -e "$dest" ] ; then
+      ln -sf "$src" "$dest"
+      success "linked $src to $dest"
+    else
+      success "skipped $src; $dest already exists"
+    fi
+  done
+}
+
 setup_gitconfig
 install_dotfiles
+install_zed_config
 
 echo ''
 echo '  All installed!'
