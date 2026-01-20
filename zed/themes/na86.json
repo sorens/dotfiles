@@ -79,8 +79,8 @@
           {
             "background": "#0A1A8C", // Darker, muted blue for subtle background contrast
             "cursor": "#1E90FF", // Bright, vivid blue for clear cursor visibility
-            "selection": "#1E90FF40" // Same bright blue with 25% opacity for a soft selection highlight
-          }
+            "selection": "#1E90FF40", // Same bright blue with 25% opacity for a soft selection highlight
+          },
         ],
         "predictive": "#00FF00",
         "predictive.background": "#00FF0030",
@@ -151,226 +151,226 @@
           "attribute": {
             "color": "#708090", // gray
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "boolean": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "comment": {
             "color": "#70809080", // gray
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "comment.doc": {
             "color": "#70809080", // gray
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "constant": {
             "color": "#0000FF", // blue
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "constructor": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "embedded": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "emphasis": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "emphasis.strong": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "enum": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "function": {
             "color": "#FF4500",
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "hint": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "keyword": {
             "color": "#0000FF", // blue
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "label": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "link_text": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "link_uri": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "number": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "operator": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "predictive": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "preproc": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "primary": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           // e.g. JSON property
           "property": {
             "color": "#00FF00", // green
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "punctuation": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "punctuation.bracket": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "punctuation.delimiter": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "punctuation.list_marker": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "punctuation.special": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "string": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "string.escape": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "string.regex": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "string.special": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "string.special.symbol": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "tag": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "text.literal": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "title": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "type": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "type.super": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "variable": {
             "color": "#B0E0E6", // powder blue
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "variable.parameter": {
             "color": "#B0E0E6", // powder blue
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "variable.special": {
             "color": "#B0E0E6", // powder blue
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "variant": {
             "color": "#B0E0E6", // powder blue
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "type.builtin": {
             "color": "#B0E0E6", // powder blue
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "function.method": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
+            "font_weight": 500,
           },
           "function.special.definition": {
             "color": "#F0F8FF", // slightly cool vivid white (with a tiny blue tint)
             "font_style": "normal",
-            "font_weight": 500
-          }
-        }
-      }
-    }
-  ]
+            "font_weight": 500,
+          },
+        },
+      },
+    },
+  ],
 }

@@ -10,27 +10,27 @@
     "context": "Workspace",
     "bindings": {
       // "shift shift": "file_finder::Toggle"
-    }
+    },
   },
   {
     "context": "Editor",
     "bindings": {
       "ctrl-p": "file_finder::Toggle",
       "ctrl-]": "editor::GoToDefinition",
-      "ctrl-t": "pane::GoBack"
-    }
+      "ctrl-t": "pane::GoBack",
+    },
   },
   {
     "context": "vim_mode == normal || vim_mode == visual",
     "bindings": {
       ", /": "editor::ToggleComments",
-      ", g r": "editor::Rename"
-    }
+      ", g r": "editor::Rename",
+    },
   },
   {
     "context": "vim_mode == visual",
     "bindings": {
-      "S": "vim::PushAddSurrounds"
-    }
-  }
+      "S": "vim::PushAddSurrounds",
+    },
+  },
 ]

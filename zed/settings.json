@@ -12,9 +12,9 @@
     "mode": "subtle",
     "copilot": {
       "proxy": null,
-      "proxy_no_verify": null
+      "proxy_no_verify": null,
     },
-    "enabled_in_text_threads": false
+    "enabled_in_text_threads": false,
   },
 
   "agent": {
@@ -23,16 +23,16 @@
     "model_parameters": [],
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-opus-4-1"
-    }
+      "model": "claude-opus-4-1",
+    },
   },
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
 
   "outline_panel": {
-    "dock": "right"
+    "dock": "right",
   },
   "ui_font_size": 12,
 
@@ -41,18 +41,18 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Xcode Default Dark"
+    "dark": "Xcode Default Dark",
   },
 
   "vim_mode": true,
 
   "terminal": {
-    "max_scroll_history_lines": 100000
+    "max_scroll_history_lines": 100000,
   },
 
   "languages": {
     "Make": {
-      "hard_tabs": true
+      "hard_tabs": true,
     },
 
     "Ruby": {
@@ -60,17 +60,17 @@
         "ruby-lsp",
         "rubocop",
         "tailwindcss-language-server",
-        "!solargraph"
-      ]
+        "!solargraph",
+      ],
     },
 
     "HTML": {
-      "format_on_save": "off"
+      "format_on_save": "off",
     },
 
     "CSS": {
-      "format_on_save": "off"
-    }
+      "format_on_save": "off",
+    },
   },
 
   "lsp": {
@@ -79,21 +79,21 @@
         "enabledFeatures": {
           // Zed does not currently support ruby-lsp's method of diagnostics
           // collection, so we disable that feature for now.
-          "diagnostics": false
-        }
-      }
+          "diagnostics": false,
+        },
+      },
     },
 
     "tailwindcss-language-server": {
       "settings": {
         "includeLanguages": {
           "erb": "html",
-          "ruby": "html"
+          "ruby": "html",
         },
         "experimental": {
-          "classRegex": ["\\bclass:\\s*['\"]([^'\"]*)['\"]"]
-        }
-      }
-    }
-  }
+          "classRegex": ["\\bclass:\\s*['\"]([^'\"]*)['\"]"],
+        },
+      },
+    },
+  },
 }
