@@ -18,35 +18,124 @@
   },
 
   "agent": {
-    "use_modifier_to_send": true,
+    "profiles": {
+      "ask": {
+        "name": "Ask",
+        "tools": {
+          "terminal": true,
+          "create_directory": true,
+          "contents": true,
+          "diagnostics": true,
+          "fetch": true,
+          "list_directory": true,
+          "project_notifications": true,
+          "now": true,
+          "find_path": true,
+          "read_file": true,
+          "open": true,
+          "grep": true,
+          "thinking": true,
+          "web_search": true,
+          "copy_path": true,
+        },
+        "enable_all_context_servers": false,
+        "context_servers": {},
+      },
+    },
     "always_allow_tool_actions": true,
+    "commit_message_model": {
+      "provider": "anthropic",
+      "model": "claude-opus-4-latest",
+    },
+    "default_profile": "write",
     "model_parameters": [],
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-opus-4-1",
+      "provider": "anthropic",
+      "model": "claude-opus-4-5-thinking-latest",
+    },
+    "dock": "right",
+    "enabled": true,
+    "use_modifier_to_send": true,
+  },
+
+  "agent_servers": {
+    "claude": {
+      "favorite_models": ["opus"],
+      "default_config_options": {},
+      "favorite_config_option_values": {},
     },
   },
+
+  "agent_ui_font_size": 24,
+
+  "debugger": {
+    "dock": "left",
+  },
+
+  "project_panel": {
+    "show_diagnostics": "all",
+    "dock": "left",
+    "git_status": true,
+  },
+
+  "tabs": {
+    "show_diagnostics": "all", // does not work, `off` only behavior
+  },
+
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
   },
 
+  "diagnostics": {
+    "button": true,
+    "include_warnings": true,
+    "lsp_pull_diagnostics": {
+      "enabled": true,
+      "debounce_ms": 50,
+    },
+    "inline": {
+      "enabled": true, // yes, display diagnostic info to the right of a line
+      "update_debounce_ms": 300,
+      "padding": 4,
+      "min_column": 80,
+      "max_severity": "warning",
+    },
+  },
+
+  "features": {
+    "edit_prediction_provider": "none", // potentially slows down editing
+  },
+
   "outline_panel": {
     "dock": "right",
   },
-  "ui_font_size": 12,
 
-  "buffer_font_family": "Berkeley Mono",
-  "buffer_font_size": 10,
+  "base_keymap": "VSCode",
+  "buffer_font_family": "Ligalex Mono",
+  "buffer_font_size": 20,
+  "diagnostics_max_severity": null,
+  "extend_comment_on_newline": false,
+  "icon_theme": "Material Icon Theme",
+  "ui_font_family": "BlexMono Nerd Font Propo",
+  "ui_font_size": 24,
+  "file_types": {
+    "JSON": ["csasm", "csprt"],
+  },
+  // "format_on_save": "off",
+
   "theme": {
     "mode": "system",
-    "light": "One Light",
-    "dark": "Xcode Default Dark",
+    "light": "XY-Zed",
+    "dark": "XY-Zed",
   },
 
   "vim_mode": false,
 
   "terminal": {
+    "dock": "bottom",
+    "font_family": "Ligalex Mono",
+    "font_size": 20,
     "max_scroll_history_lines": 100000,
   },
 
@@ -71,6 +160,34 @@
     "CSS": {
       "format_on_save": "off",
     },
+
+    "C": {
+      "format_on_save": "off",
+      "use_on_type_format": false,
+      "prettier": {
+        "allowed": false,
+      },
+    },
+
+    "C++": {
+      "format_on_save": "off",
+      "use_on_type_format": false,
+      "prettier": {
+        "allowed": false,
+      },
+    },
+
+    "CSharp": {
+      "format_on_save": "off",
+      "use_on_type_format": false,
+      "prettier": {
+        "allowed": false,
+      },
+    },
+
+    "Go": {
+      // "format_on_save": "on"
+    },
   },
 
   "lsp": {
@@ -80,6 +197,14 @@
           // Zed does not currently support ruby-lsp's method of diagnostics
           // collection, so we disable that feature for now.
           "diagnostics": false,
+        },
+      },
+    },
+
+    "omnisharp": {
+      "settings": {
+        "FormattingOptions": {
+          "EnableEditorConfigSupport": true,
         },
       },
     },

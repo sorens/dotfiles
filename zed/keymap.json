@@ -7,6 +7,12 @@
 // from the command palette.
 [
   {
+    "bindings": {
+      "cmd-alt-2": "pane::SplitRight",
+      "cmd-alt-1": "pane::JoinAll",
+    },
+  },
+  {
     "context": "Workspace",
     "bindings": {
       // "shift shift": "file_finder::Toggle"
@@ -21,16 +27,16 @@
     },
   },
   {
-    "context": "vim_mode == normal || vim_mode == visual",
-    "bindings": {
-      ", /": "editor::ToggleComments",
-      ", g r": "editor::Rename",
-    },
+    // "context": "vim_mode == normal || vim_mode == visual",
+    // "bindings": {
+    //   ", /": "editor::ToggleComments",
+    //   ", g r": "editor::Rename",
+    // },
   },
   {
-    "context": "vim_mode == visual",
-    "bindings": {
-      "S": "vim::PushAddSurrounds",
-    },
+    // "context": "vim_mode == visual",
+    // "bindings": {
+    //   "S": "vim::PushAddSurrounds",
+    // },
   },
 ]
