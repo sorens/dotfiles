@@ -44,7 +44,7 @@
     "dark": "Xcode Default Dark",
   },
 
-  "vim_mode": true,
+  "vim_mode": false,
 
   "terminal": {
     "max_scroll_history_lines": 100000,
