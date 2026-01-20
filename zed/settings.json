@@ -120,7 +120,7 @@
   "ui_font_family": "BlexMono Nerd Font Propo",
   "ui_font_size": 24,
   "file_types": {
-    "JSON": ["csasm", "csprt"],
+    "JSONC": ["*.csasm", "*.csprt"],
   },
   // "format_on_save": "off",
 
