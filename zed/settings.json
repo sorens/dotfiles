@@ -121,6 +121,7 @@
   "ui_font_size": 24,
   "file_types": {
     "JSONC": ["*.csasm", "*.csprt"],
+    "Shell Script": ["*.dotfiles/*.symlink"],
   },
   // "format_on_save": "off",
 
