@@ -1,159 +1,97 @@
 // Zed settings
+//
 // For information on how to configure Zed, see the Zed
 // documentation: https://zed.dev/docs/configuring-zed
 //
 // To see all of Zed's default settings without changing your
 // custom settings, run `zed: open default settings` from the
-//
-// command palette
+// command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "agent_servers": {
-    "claude": {
-      "favorite_models": [
-        "opus"
-      ],
-      "default_config_options": {},
-      "favorite_config_option_values": {}
-    }
+  "show_edit_predictions": false,
+  "edit_predictions": {
+    "mode": "subtle",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null
+    },
+    "enabled_in_text_threads": false
   },
-  "vim_mode": false,
-  "calls": {
-    "mute_on_join": true
-  },
-  "show_wrap_guides": false,
+
   "agent": {
-    "profiles": {
-      "ask": {
-        "name": "Ask",
-        "tools": {
-          "terminal": true,
-          "create_directory": true,
-          "contents": true,
-          "diagnostics": true,
-          "fetch": true,
-          "list_directory": true,
-          "project_notifications": true,
-          "now": true,
-          "find_path": true,
-          "read_file": true,
-          "open": true,
-          "grep": true,
-          "thinking": true,
-          "web_search": true,
-          "copy_path": true
-        },
-        "enable_all_context_servers": false,
-        "context_servers": {}
-      }
-    },
+    "use_modifier_to_send": true,
     "always_allow_tool_actions": true,
-    "commit_message_model": {
-      "provider": "anthropic",
-      "model": "claude-opus-4-latest"
-    },
-    "default_profile": "write",
+    "model_parameters": [],
     "default_model": {
-      "provider": "anthropic",
-      "model": "claude-opus-4-5-thinking-latest"
-    },
-    "dock": "right",
-    "enabled": true
-  },
-  "agent_ui_font_size": 24,
-  "debugger": {
-    "dock": "left"
-  },
-  "diagnostics": {
-    "button": true,
-    "include_warnings": true,
-    "lsp_pull_diagnostics": {
-      "enabled": true,
-      "debounce_ms": 50
-    },
-    "inline": {
-      "enabled": true, // yes, display diagnostic info to the right of a line
-      "update_debounce_ms": 300,
-      "padding": 4,
-      "min_column": 80,
-      "max_severity": "warning"
+      "provider": "zed.dev",
+      "model": "claude-opus-4-1"
     }
-  },
-  "features": {
-    "edit_prediction_provider": "none" // potentially slows down editing
-  },
-  "git": {
-    "inline_blame": {
-      "enabled": true
-    }
-  },
-  "outline_panel": {
-    "dock": "right"
-  },
-  "project_panel": {
-    "show_diagnostics": "all",
-    "dock": "left",
-    "git_status": true
-  },
-  "tabs": {
-    "show_diagnostics": "all" // does not work, `off` only behavior
   },
   "telemetry": {
     "diagnostics": false,
     "metrics": false
   },
-  "terminal": {
-    "dock": "bottom",
-    "font_family": "Ligalex Mono",
-    "font_size": 20
+
+  "outline_panel": {
+    "dock": "right"
   },
+  "ui_font_size": 12,
+
+  "buffer_font_family": "Berkeley Mono",
+  "buffer_font_size": 10,
   "theme": {
     "mode": "system",
-    "light": "XY-Zed",
-    "dark": "XY-Zed"
+    "light": "One Light",
+    "dark": "Xcode Default Dark"
   },
-  "base_keymap": "VSCode",
-  "buffer_font_family": "Ligalex Mono",
-  "buffer_font_size": 20,
-  "diagnostics_max_severity": null,
-  "extend_comment_on_newline": false,
-  "icon_theme": "Material Icon Theme",
-  "ui_font_family": "BlexMono Nerd Font Propo",
-  "ui_font_size": 24,
-  "file_types": {
-    "JSON": ["csasm", "csprt"]
+
+  "vim_mode": true,
+
+  "terminal": {
+    "max_scroll_history_lines": 100000
   },
-  // "format_on_save": "off",
+
   "languages": {
-    "C": {
-      "format_on_save": "off",
-      "use_on_type_format": false,
-      "prettier": {
-        "allowed": false
-      }
+    "Make": {
+      "hard_tabs": true
     },
-    "C++": {
-      "format_on_save": "off",
-      "use_on_type_format": false,
-      "prettier": {
-        "allowed": false
-      }
+
+    "Ruby": {
+      "language_servers": [
+        "ruby-lsp",
+        "rubocop",
+        "tailwindcss-language-server",
+        "!solargraph"
+      ]
     },
-    "CSharp": {
-      "format_on_save": "off",
-      "use_on_type_format": false,
-      "prettier": {
-        "allowed": false
-      }
+
+    "HTML": {
+      "format_on_save": "off"
     },
-    "Go": {
-      // "format_on_save": "on"
+
+    "CSS": {
+      "format_on_save": "off"
     }
   },
+
   "lsp": {
-    "omnisharp": {
+    "ruby-lsp": {
+      "initialization_options": {
+        "enabledFeatures": {
+          // Zed does not currently support ruby-lsp's method of diagnostics
+          // collection, so we disable that feature for now.
+          "diagnostics": false
+        }
+      }
+    },
+
+    "tailwindcss-language-server": {
       "settings": {
-        "FormattingOptions": {
-          "EnableEditorConfigSupport": true
+        "includeLanguages": {
+          "erb": "html",
+          "ruby": "html"
+        },
+        "experimental": {
+          "classRegex": ["\\bclass:\\s*['\"]([^'\"]*)['\"]"]
         }
       }
     }
