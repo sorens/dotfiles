@@ -7,8 +7,11 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "soft_wrap": "editor_width",
+  "show_wrap_guides": true,
   "show_edit_predictions": false,
   "edit_predictions": {
+    "provider": "none",
     "mode": "subtle",
     "copilot": {
       "proxy": null,
@@ -18,6 +21,15 @@
   },
 
   "agent": {
+    "tool_permissions": {
+      "default": "allow",
+    },
+    "favorite_models": [
+      {
+        "provider": "zed.dev",
+        "model": "claude-opus-4-5-thinking",
+      },
+    ],
     "profiles": {
       "ask": {
         "name": "Ask",
@@ -42,7 +54,6 @@
         "context_servers": {},
       },
     },
-    "always_allow_tool_actions": true,
     "commit_message_model": {
       "provider": "anthropic",
       "model": "claude-opus-4-latest",
@@ -50,8 +61,10 @@
     "default_profile": "write",
     "model_parameters": [],
     "default_model": {
-      "provider": "anthropic",
-      "model": "claude-opus-4-5-thinking-latest",
+      "effort": "high",
+      "enable_thinking": true,
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4-6",
     },
     "dock": "right",
     "enabled": true,
@@ -60,7 +73,7 @@
 
   "agent_servers": {
     "claude": {
-      "favorite_models": ["opus"],
+      "favorite_models": ["opus", "default"],
       "default_config_options": {},
       "favorite_config_option_values": {},
     },
@@ -103,10 +116,6 @@
     },
   },
 
-  "features": {
-    "edit_prediction_provider": "none", // potentially slows down editing
-  },
-
   "outline_panel": {
     "dock": "right",
   },
@@ -141,6 +150,9 @@
   },
 
   "languages": {
+    "Svelte": {
+      "tab_size": 2,
+    },
     "Make": {
       "hard_tabs": true,
     },
@@ -160,6 +172,11 @@
 
     "CSS": {
       "format_on_save": "off",
+      "tab_size": 2,
+      "language_servers": [
+        "tailwindcss-intellisense-css",
+        "!vscode-css-language-server",
+      ],
     },
 
     "C": {
@@ -210,16 +227,57 @@
       },
     },
 
+    "svelte-language-server": {
+      "initialization_options": {
+        "configuration": {
+          "svelte": {
+            "plugin": {
+              "css": {
+                "diagnostics": {
+                  // https://github.com/sveltejs/language-tools/tree/master/packages/language-server#svelteplugincssdiagnosticsenable
+                  "enable": false,
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+
     "tailwindcss-language-server": {
       "settings": {
+        "css": {
+          "lint": {
+            "unknownAtRules": "ignore",
+          },
+        },
         "includeLanguages": {
           "erb": "html",
           "ruby": "html",
+          "svelte": "html",
         },
         "experimental": {
           "classRegex": ["\\bclass:\\s*['\"]([^'\"]*)['\"]"],
         },
       },
+    },
+
+    "vscode-css-language-server": {
+      "settings": {
+        "css": {
+          "lint": {
+            "unknownAtRules": "ignore",
+          },
+        },
+      },
+    },
+  },
+
+  "inlay_hints": {
+    "enabled": false,
+    "toggle_on_modifiers_press": {
+      "alt": true,
+      "control": true,
     },
   },
 }
