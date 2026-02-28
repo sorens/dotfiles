@@ -133,9 +133,23 @@ install_zed_config () {
   done
 }
 
+install_claude_config () {
+  for name in settings.json ; do
+    local src="$DOTFILES_ROOT/claude/$name"
+    local dest="$HOME/.claude/$name"
+    if [ ! -e "$dest" ] ; then
+      ln -sf "$src" "$dest"
+      success "linked $src to $dest"
+    else
+      success "skipped $src; $dest already exists"
+    fi
+  done
+}
+
 setup_gitconfig
 install_dotfiles
 install_zed_config
+install_claude_config
 
 echo ''
 echo '  All installed!'
