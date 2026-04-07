@@ -72,3 +72,6 @@ fi
 if which mise > /dev/null ; then eval "$(mise activate -qs zsh)" ; fi
 if [ -f "$HOME/.cargo/env" ] ; then . "$HOME/.cargo/env" ; fi
 ssh-add --apple-load-keychain
+
+# mise
+export MISE_CEILING_PATHS="$HOME/src"
