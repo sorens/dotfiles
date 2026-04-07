@@ -72,11 +72,13 @@
   },
 
   "agent_servers": {
-    "claude": {
-      "favorite_models": ["opus", "default"],
-      "default_config_options": {},
-      "favorite_config_option_values": {},
-    },
+    "claude-acp": {
+      "type": "registry",
+      "favorite_models": [
+        "opus",
+        "default"
+      ]
+    }
   },
 
   "agent_ui_font_size": 24,
