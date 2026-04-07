@@ -1,13 +1,4 @@
 {
-  "sandbox": {
-    "enabled": true,
-    "allowUnsandboxedCommands": false,
-    "filesystem": {
-      "denyWrite": [".git/", ".dotfiles/"],
-      "denyRead": ["/Users/skorens/"],
-      "allowRead": ["/Users/skorens/src/", "/Users/skorens/.claude/"]
-    }
-  },
   "permissions": {
     "allow": [
       "WebSearch",
@@ -15,6 +6,8 @@
       "WebFetch(domain:github.com)",
       "WebFetch(domain:theswiftdev.com)",
       "WebFetch(domain:www.swift.org)",
+      "WebFetch(domain:proxy.golang.org)",
+      "WebFetch(domain:sum.golang.org)",
       "mcp__acp__Bash",
       "mcp__acp__Write",
       "mcp__acp__Edit",
@@ -86,8 +79,55 @@
     "gopls-lsp@claude-plugins-official": true,
     "clangd-lsp@claude-plugins-official": true
   },
+  "sandbox": {
+    "enabled": true,
+    "allowUnsandboxedCommands": false,
+    "filesystem": {
+      "allowWrite": [
+        "/Users/skorens/.claude",
+        "/Users/skorens/.local/share/mise",
+        "/Users/skorens/src",
+        "/Users/skorens/pkg/mod",
+        "/Users/skorens/Library/Caches/go-build"
+      ],
+      "denyWrite": [
+        ".git/",
+        ".dotfiles/",
+        "/Applications",
+        "/bin",
+        "/etc",
+        "/home",
+        "/Library",
+        "/opt",
+        "/System",
+        "/usr",
+        "/Volumes"
+      ],
+      "denyRead": [
+        "/bin",
+        "/etc",
+        "/home",
+        "/Library",
+        "/opt",
+        "/System",
+        "/usr",
+        "/Volumes"
+      ],
+      "allowRead": [
+        "/Users/skorens/.claude",
+        "/Users/skorens/.local/share/mise",
+        "/Users/skorens/src",
+        "/Users/skorens/pkg/mod",
+        "/Users/skorens/Library/Caches/go-build",
+        "/Library/Keychains",
+        "/usr/bin",
+        "/Applications/Xcode-26.3.0.app"
+      ]
+    }
+  },
   "alwaysThinkingEnabled": true,
   "autoUpdatesChannel": "latest",
   "skipDangerousModePermissionPrompt": false,
-  "autoAllowBashIfSandboxed": false
+  "autoAllowBashIfSandboxed": false,
+  "model": "sonnet[1m]"
 }
