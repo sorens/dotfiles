@@ -31,6 +31,7 @@ if [ -d "$HOME/.fly/bin" ] ; then
 fi
 
 export GOPATH="$HOME"
+export GOBIN="$HOME/.local/bin"
 
 export PROMPT=$'%F{blue}%~%f %#> '
 
