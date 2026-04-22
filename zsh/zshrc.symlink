@@ -39,3 +39,8 @@ fi
 if [[ -a ~/.local/bin/mise ]] ; then
     eval "$(~/.local/bin/mise activate zsh)"
 fi
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/skorens/.lmstudio/bin"
+# End of LM Studio CLI section
+
