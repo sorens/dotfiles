@@ -88,7 +88,8 @@
         "/Users/skorens/.local/share/mise",
         "/Users/skorens/src",
         "/Users/skorens/pkg/mod",
-        "/Users/skorens/Library/Caches/go-build"
+        "/Users/skorens/Library/Caches/go-build",
+        "/Users/skorens/src/github.com/config"
       ],
       "denyWrite": [
         ".git/",
@@ -121,13 +122,15 @@
         "/Users/skorens/Library/Caches/go-build",
         "/Library/Keychains",
         "/usr/bin",
-        "/Applications/Xcode-26.3.0.app"
+        "/Applications/Xcode-26.3.0.app",
+        "/opt/homebrew",
+        "/Users/skorens/src/github.com/config"
       ]
     }
   },
   "alwaysThinkingEnabled": true,
+  "effortLevel": "high",
   "autoUpdatesChannel": "latest",
   "skipDangerousModePermissionPrompt": false,
-  "autoAllowBashIfSandboxed": false,
-  "model": "sonnet[1m]"
+  "autoAllowBashIfSandboxed": false
 }
