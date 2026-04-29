@@ -44,3 +44,4 @@ fi
 export PATH="$PATH:/Users/skorens/.lmstudio/bin"
 # End of LM Studio CLI section
 
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
