@@ -46,3 +46,5 @@ alias gcs="git show --show-signature"
 alias gdh="git diff HEAD"
 
 alias space='cd ~/src/github.com/sorens/spacex'
+
+alias safe='safehouse --enable=electron,xcode,ssh,shell-init --env --workdir="$(pwd)" -- claude --dangerously-skip-permissions'
