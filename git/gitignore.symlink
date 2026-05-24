@@ -15,3 +15,4 @@ sko_data/
 skobuild
 .bk.yaml
 **/.claude/settings.local.json
+.safehouse
