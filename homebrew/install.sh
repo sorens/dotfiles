@@ -33,3 +33,6 @@ brew install git git-lfs
 
 # security
 brew install 1password-cli
+
+# safehouse
+brew install safehouse
