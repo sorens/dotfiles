@@ -16,3 +16,5 @@ skobuild
 .bk.yaml
 **/.claude/settings.local.json
 .safehouse
+.env
+mise.toml
