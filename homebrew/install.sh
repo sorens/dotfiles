@@ -35,7 +35,7 @@ brew install git git-lfs
 brew install 1password-cli
 
 # safehouse
-brew install safehouse
+brew install eugene1g/safehouse/agent-safehouse
 
 # agents
 brew install codex
