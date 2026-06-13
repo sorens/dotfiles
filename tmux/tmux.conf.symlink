@@ -79,3 +79,5 @@ bind-key k send-keys -R \; clear-history
 
 # tmux-in-tmux trickery
 # bind-key -n C-\ send-prefix
+
+set-window-option -g mode-keys vi
