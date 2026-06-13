@@ -72,7 +72,17 @@ fi
 
 if which mise > /dev/null ; then eval "$(mise activate -qs zsh)" ; fi
 if [ -f "$HOME/.cargo/env" ] ; then . "$HOME/.cargo/env" ; fi
-ssh-add --apple-load-keychain
 
 # mise
 export MISE_CEILING_PATHS="$HOME/src"
+
+# mosh/tmux sessions don't inherit SSH_AUTH_SOCK; point at the macOS
+# launchd ssh-agent (Keychain-backed) and ensure the key is loaded.
+if ! ssh-add -l >/dev/null 2>&1; then
+    for sock in /var/run/com.apple.launchd.*/Listeners; do
+        [ -S "$sock" ] || continue
+        SSH_AUTH_SOCK="$sock" ssh-add -l >/dev/null 2>&1
+        [ $? -ne 2 ] && export SSH_AUTH_SOCK="$sock" && break
+    done
+    ssh-add -l >/dev/null 2>&1 || ssh-add --apple-load-keychain ~/.ssh/id_ed25519 >/dev/null 2>&1
+fi
