@@ -54,6 +54,7 @@ export HOMEBREW_REPOSITORY="/opt/homebrew";
 export PATH="/opt/homebrew/bin:/opt/homebrew/sbin${PATH+:$PATH}";
 export MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:";
 export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
+export RIPGREP_CONFIG_PATH="$HOME/.dotfiles/ripgrep/ripgreprc.symlink"
 
 # We enable up/down arrow history search already in zsh/completion.zsh, but on
 # some Linux systems, the side effect of setting `vim` as $EDITOR enables
