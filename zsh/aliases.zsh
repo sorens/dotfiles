@@ -49,6 +49,6 @@ alias gdh="git diff HEAD"
 alias space='cd ~/src/github.com/sorens/spacex'
 
 alias safe='safehouse --enable=electron,xcode,ssh,shell-init --env --workdir="$(pwd)" -- claude --dangerously-skip-permissions'
-alias safecodex='safehouse --enable=electron,xcode,ssh,shell-init --env --workdir="$(pwd)" -- codex --dangerously-bypass-approvals-and-sandbox'
+alias safecodex='safehouse --enable=electron,xcode,ssh,shell-init --env --workdir="$(pwd)" --append-profile=$HOME/.safehouse-gpg-agent.sb --append-profile=$HOME/.safehouse-dotnet.sb -- codex --dangerously-bypass-approvals-and-sandbox'
 alias safeai='safecodex'
-alias safeclaude='safehouse --enable=electron,xcode,ssh,shell-init --env --workdir="$(pwd)" -- claude --dangerously-skip-permissions'
+alias safeclaude='safehouse --enable=electron,xcode,ssh,shell-init --env --workdir="$(pwd)" --append-profile=$HOME/.safehouse-gpg-agent.sb --append-profile=$HOME/.safehouse-dotnet.sb -- claude --dangerously-skip-permissions'
