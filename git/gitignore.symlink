@@ -18,3 +18,5 @@ skobuild
 .safehouse
 .env
 mise.toml
+.claude/briefs
+.claude/plans
