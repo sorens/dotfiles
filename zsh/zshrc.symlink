@@ -46,3 +46,8 @@ export PATH="$PATH:/Users/skorens/.lmstudio/bin"
 # End of LM Studio CLI section
 
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+# OpenClaw Completion
+[ -f "/Users/skorens/.openclaw/completions/openclaw.zsh" ] && source "/Users/skorens/.openclaw/completions/openclaw.zsh"
+
+[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
