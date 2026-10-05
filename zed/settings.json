@@ -13,6 +13,13 @@
   },
   "cli_default_open_behavior": "new_window",
   "language_models": {
+    "llama.cpp": {
+      "context_window": 24000,
+      "api_url": "http://127.0.0.1:1234"
+    },
+    "ollama": {
+      "context_window": 65536
+    },
     "lmstudio": {
       "api_url": "http://localhost:1234/v1",
       "available_models": [
@@ -36,6 +43,10 @@
   "show_wrap_guides": true,
   "show_edit_predictions": false,
   "edit_predictions": {
+    "codestral": {
+      "model": "codestral-latest"
+    },
+    "allow_data_collection": "no",
     "provider": "none",
     "mode": "subtle",
     "copilot": {
@@ -45,6 +56,14 @@
   },
 
   "agent": {
+    "sandbox_permissions": {
+      "allow_all_hosts": true,
+      "allow_unsandboxed": false
+    },
+    "limit_content_width": false,
+    "thinking_display": "always_collapsed",
+    "expand_edit_card": false,
+    "expand_terminal_card": false,
     "tool_permissions": {
       "default": "allow",
     },
@@ -86,8 +105,8 @@
     "model_parameters": [],
     "default_model": {
       "enable_thinking": false,
-      "provider": "lmstudio",
-      "model": "qwen/qwen3.6-35b-a3b",
+      "provider": "llama.cpp",
+      "model": "qwen/qwen3.6-27b",
     },
     "dock": "right",
     "enabled": true,
@@ -100,6 +119,12 @@
     },
     "claude-acp": {
       "type": "registry",
+    },
+    "pi": {
+      "type": "custom",
+      "command": "pi",
+      "args": ["acp-server", "--model", "claude-opus-4-8[1m]"],
+      "env":{},
     },
   },
 
@@ -167,6 +192,7 @@
   "vim_mode": false,
 
   "terminal": {
+    "copy_on_select": false,
     "dock": "bottom",
     "font_family": "Ligalex Mono",
     "font_size": 20,
