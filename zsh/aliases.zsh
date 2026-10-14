@@ -48,10 +48,10 @@ alias gdh="git diff HEAD"
 
 alias space='cd ~/src/github.com/sorens/spacex'
 
-alias safe='safehouse --enable=electron,xcode,ssh,shell-init --env --workdir="$(pwd)" --append-profile=$HOME/.config/safehouse/config-org-sockets.sb -- claude --dangerously-skip-permissions'
+alias safe='safehouse --enable=electron,xcode,ssh,shell-init --env --workdir="$(pwd)" --append-profile=$HOME/.config/safehouse/config-org-sockets.sb --append-profile=$HOME/.config/safehouse/xcode-mcp.sb -- claude --dangerously-skip-permissions'
 
 alias safecodex='safehouse --enable=electron,xcode,ssh,shell-init --env --workdir="$(pwd)" --append-profile=$HOME/.config/safehouse/config-org-sockets.sb --append-profile=$HOME/.config/safehouse/gpg-agent.sb --append-profile=$HOME/.config/safehouse/ssh-agent.sb --append-profile=$HOME/.config/safehouse/dotnet.sb -- codex --dangerously-bypass-approvals-and-sandbox --no-daemon'
 
 alias safeai='safecodex'
 
-alias safeclaude='safehouse --enable=electron,xcode,ssh,shell-init --env --workdir="$(pwd)" --append-profile=$HOME/.config/safehouse/config-org-sockets.sb --append-profile=$HOME/.config/safehouse/claude-daemon.sb --append-profile=$HOME/.config/safehouse/claude-daemon-procinfo.sb --append-profile=$HOME/.config/safehouse/gpg-agent.sb --append-profile=$HOME/.config/safehouse/ssh-agent.sb --append-profile=$HOME/.config/safehouse/dotnet.sb -- claude --dangerously-skip-permissions'
+alias safeclaude='safehouse --enable=electron,xcode,ssh,shell-init --env --workdir="$(pwd)" --append-profile=$HOME/.config/safehouse/config-org-sockets.sb --append-profile=$HOME/.config/safehouse/claude-daemon.sb --append-profile=$HOME/.config/safehouse/claude-daemon-procinfo.sb --append-profile=$HOME/.config/safehouse/gpg-agent.sb --append-profile=$HOME/.config/safehouse/ssh-agent.sb --append-profile=$HOME/.config/safehouse/dotnet.sb --append-profile=$HOME/.config/safehouse/xcode-mcp.sb -- claude --dangerously-skip-permissions'
