@@ -32,15 +32,6 @@ backup_if_exists() {
   fi
 }
 
-# Create backup directory if we're going to need it
-if [ -e ~/.config/zed/settings.json ] && [ ! -L ~/.config/zed/settings.json ] || \
-[ -e ~/.config/zed/keymap.json ] && [ ! -L ~/.config/zed/keymap.json ] || \
-[ -e ~/.config/zed/themes/xy-zed.json ] && [ ! -L ~/.config/zed/themes/xy-zed.json ] || \
-   [ -e ~/.config/zed/themes/na86.json ] && [ ! -L ~/.config/zed/themes/na86.json ]; then
-  mkdir -p $BACKUP_DIR/themes
-  echo "Creating backup directory: $BACKUP_DIR"
-fi
-
 # Backup and link settings.json
 backup_if_exists ~/.config/zed/settings.json "$BACKUP_DIR/settings.json"
 ln -sf "$DOTFILES_ZED_DIR/settings.json" ~/.config/zed/settings.json
@@ -48,6 +39,10 @@ ln -sf "$DOTFILES_ZED_DIR/settings.json" ~/.config/zed/settings.json
 # Backup and link keymap.json
 backup_if_exists ~/.config/zed/keymap.json "$BACKUP_DIR/keymap.json"
 ln -sf "$DOTFILES_ZED_DIR/keymap.json" ~/.config/zed/keymap.json
+
+# Backup and link debug.json
+backup_if_exists ~/.config/zed/debug.json "$BACKUP_DIR/debug.json"
+ln -sf "$DOTFILES_ZED_DIR/debug.json" ~/.config/zed/debug.json
 
 # Backup and link theme files
 backup_if_exists ~/.config/zed/themes/na86.json "$BACKUP_DIR/themes/na86.json"
