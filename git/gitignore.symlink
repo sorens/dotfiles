@@ -1,22 +1,27 @@
 .DS_Store
 .svn
+.vscode/
 *~
-*.swp
+.*.sw[a-p]
 Session.vim
-*.rbc
 **/*.xcodeproj/xcuserdata
 **/*.xcworkspace/xcuserdata
-tags
-.vscode/
+/tags
 __debug_bin*
+.bk.yaml
+
 sko.Makefile
 sko_scripts/
 sko_data/
 skobuild
-.bk.yaml
+
+# claude
 **/.claude/settings.local.json
+**/.claude/briefs
+**/.claude/plans
+
+# mise, safehouse
 .safehouse
 .env
-mise.toml
-.claude/briefs
-.claude/plans
+mise.local.toml
+/env.sh
